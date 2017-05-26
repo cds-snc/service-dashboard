@@ -18,12 +18,21 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 */
 
-Route::resource('departments', 'Api\DepartmentController');
+Route::resource('departments', 'Api\DepartmentController', ['only' => [
+    'index', 'show'
+]]);
 
 Route::get('departments/{department}/programs', 'Api\DepartmentProgramController@index');
 Route::get('departments/{department}/services', 'Api\DepartmentServiceController@index');
 
-Route::resource('programs', 'Api\ProgramController');
+Route::resource('programs', 'Api\ProgramController', ['only' => [
+    'show'
+]]);
+
 Route::get('programs/{program}/services', 'Api\ProgramServiceController@index');
 
-Route::resource('services', 'Api\ServiceController');
+Route::resource('services', 'Api\ServiceController', ['only' => [
+    'index', 'show'
+]]);
+
+Route::get('services/{service}/volumes', 'Api\ServiceVolumeController@index');
