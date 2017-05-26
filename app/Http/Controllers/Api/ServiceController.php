@@ -6,8 +6,27 @@ use App\Service;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+/**
+ * Class ServiceController
+ * @package App\Http\Controllers\Api
+ * @resource Services
+ */
 class ServiceController extends Controller
 {
+    /**
+     * Get All Services
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     */
+    public function index()
+    {
+        return Service::all();
+    }
+
+    /**
+     * Get a Specific Service
+     * @param Service $service
+     * @return Service
+     */
     public function show(Service $service)
     {
         return $service;
