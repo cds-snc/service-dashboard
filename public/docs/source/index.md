@@ -1757,8 +1757,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:00",
-        "updated_at": "2017-05-26 19:27:00",
         "department_id": 1
     },
     {
@@ -1775,8 +1773,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -1793,8 +1789,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -1811,8 +1805,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -1829,8 +1821,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -1847,8 +1837,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -1865,8 +1853,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -1883,8 +1869,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -1901,8 +1885,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -1919,8 +1901,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -1937,8 +1917,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -1955,8 +1933,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 0,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -1973,8 +1949,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 0,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -1991,8 +1965,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -2009,8 +1981,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -2027,8 +1997,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -2045,8 +2013,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 0,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -2063,8 +2029,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -2081,8 +2045,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -2099,8 +2061,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 1,
         "service_standards": 1,
         "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -2117,8 +2077,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -2135,8 +2093,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 1,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -2153,8 +2109,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 0,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -2171,8 +2125,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 0,
         "service_standards": 0,
         "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     },
     {
@@ -2189,8 +2141,6 @@ $.ajax(settings).done(function (response) {
         "user_fee": 1,
         "service_standards": 0,
         "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01",
         "department_id": 1
     }
 ]
@@ -2293,9 +2243,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:00",
-        "updated_at": "2017-05-26 19:27:00"
+        "performance_targets": 1
     }
 ]
 ```
@@ -2352,9 +2300,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:00",
-        "updated_at": "2017-05-26 19:27:00"
+        "performance_targets": 1
     },
     {
         "id": 2,
@@ -2369,9 +2315,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 3,
@@ -2386,9 +2330,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 4,
@@ -2403,9 +2345,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 5,
@@ -2420,9 +2360,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 6,
@@ -2437,9 +2375,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 7,
@@ -2454,9 +2390,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 8,
@@ -2471,9 +2405,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 9,
@@ -2488,9 +2420,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 10,
@@ -2505,9 +2435,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 11,
@@ -2522,9 +2450,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 12,
@@ -2539,9 +2465,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 13,
@@ -2556,9 +2480,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 14,
@@ -2573,9 +2495,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 15,
@@ -2590,9 +2510,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 16,
@@ -2607,9 +2525,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 17,
@@ -2624,9 +2540,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 18,
@@ -2641,9 +2555,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 19,
@@ -2658,9 +2570,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 20,
@@ -2675,9 +2585,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 21,
@@ -2692,9 +2600,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 22,
@@ -2709,9 +2615,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 23,
@@ -2726,9 +2630,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 24,
@@ -2743,9 +2645,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 25,
@@ -2760,9 +2660,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 26,
@@ -2777,9 +2675,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 27,
@@ -2794,9 +2690,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 28,
@@ -2811,9 +2705,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 29,
@@ -2828,9 +2720,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 30,
@@ -2845,9 +2735,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 31,
@@ -2862,9 +2750,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 32,
@@ -2879,9 +2765,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 33,
@@ -2896,9 +2780,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 34,
@@ -2913,9 +2795,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 35,
@@ -2930,9 +2810,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 36,
@@ -2947,9 +2825,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 37,
@@ -2964,9 +2840,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 38,
@@ -2981,9 +2855,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 39,
@@ -2998,9 +2870,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 40,
@@ -3015,9 +2885,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 41,
@@ -3032,9 +2900,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 42,
@@ -3049,9 +2915,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 43,
@@ -3066,9 +2930,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 44,
@@ -3083,9 +2945,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 45,
@@ -3100,9 +2960,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 46,
@@ -3117,9 +2975,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 47,
@@ -3134,9 +2990,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 48,
@@ -3151,9 +3005,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 49,
@@ -3168,9 +3020,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 50,
@@ -3185,9 +3035,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 51,
@@ -3202,9 +3050,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 52,
@@ -3219,9 +3065,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 53,
@@ -3236,9 +3080,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 54,
@@ -3253,9 +3095,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 55,
@@ -3270,9 +3110,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 56,
@@ -3287,9 +3125,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 57,
@@ -3304,9 +3140,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 58,
@@ -3321,9 +3155,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 59,
@@ -3338,9 +3170,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 60,
@@ -3355,9 +3185,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 61,
@@ -3372,9 +3200,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 62,
@@ -3389,9 +3215,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 63,
@@ -3406,9 +3230,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 64,
@@ -3423,9 +3245,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 65,
@@ -3440,9 +3260,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 66,
@@ -3457,9 +3275,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 67,
@@ -3474,9 +3290,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 68,
@@ -3491,9 +3305,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 69,
@@ -3508,9 +3320,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 70,
@@ -3525,9 +3335,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 71,
@@ -3542,9 +3350,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 72,
@@ -3559,9 +3365,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 73,
@@ -3576,9 +3380,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 74,
@@ -3593,9 +3395,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 75,
@@ -3610,9 +3410,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 76,
@@ -3627,9 +3425,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 77,
@@ -3644,9 +3440,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 78,
@@ -3661,9 +3455,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 79,
@@ -3678,9 +3470,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 80,
@@ -3695,9 +3485,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 81,
@@ -3712,9 +3500,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 82,
@@ -3729,9 +3515,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 83,
@@ -3746,9 +3530,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 84,
@@ -3763,9 +3545,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 85,
@@ -3780,9 +3560,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 86,
@@ -3797,9 +3575,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 87,
@@ -3814,9 +3590,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 88,
@@ -3831,9 +3605,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 89,
@@ -3848,9 +3620,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 90,
@@ -3865,9 +3635,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 91,
@@ -3882,9 +3650,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 92,
@@ -3899,9 +3665,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 93,
@@ -3916,9 +3680,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 94,
@@ -3933,9 +3695,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 95,
@@ -3950,9 +3710,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 96,
@@ -3967,9 +3725,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 97,
@@ -3984,9 +3740,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 98,
@@ -4001,9 +3755,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 99,
@@ -4018,9 +3770,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 100,
@@ -4035,9 +3785,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 101,
@@ -4052,9 +3800,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 102,
@@ -4069,9 +3815,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 103,
@@ -4086,9 +3830,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 104,
@@ -4103,9 +3845,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 105,
@@ -4120,9 +3860,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 106,
@@ -4137,9 +3875,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 107,
@@ -4154,9 +3890,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 108,
@@ -4171,9 +3905,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 109,
@@ -4188,9 +3920,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 110,
@@ -4205,9 +3935,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 111,
@@ -4222,9 +3950,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 112,
@@ -4239,9 +3965,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 113,
@@ -4256,9 +3980,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 114,
@@ -4273,9 +3995,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 115,
@@ -4290,9 +4010,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 116,
@@ -4307,9 +4025,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 117,
@@ -4324,9 +4040,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 118,
@@ -4341,9 +4055,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 119,
@@ -4358,9 +4070,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 120,
@@ -4375,9 +4085,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 121,
@@ -4392,9 +4100,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 122,
@@ -4409,9 +4115,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 123,
@@ -4426,9 +4130,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 124,
@@ -4443,9 +4145,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 125,
@@ -4460,9 +4160,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 126,
@@ -4477,9 +4175,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 127,
@@ -4494,9 +4190,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 128,
@@ -4511,9 +4205,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 129,
@@ -4528,9 +4220,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 130,
@@ -4545,9 +4235,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 131,
@@ -4562,9 +4250,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 132,
@@ -4579,9 +4265,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 133,
@@ -4596,9 +4280,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 134,
@@ -4613,9 +4295,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 0
     },
     {
         "id": 135,
@@ -4630,9 +4310,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 136,
@@ -4647,9 +4325,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 137,
@@ -4664,9 +4340,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 138,
@@ -4681,9 +4355,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 139,
@@ -4698,9 +4370,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 140,
@@ -4715,9 +4385,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 141,
@@ -4732,9 +4400,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "performance_targets": 1
     },
     {
         "id": 142,
@@ -4749,9 +4415,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 143,
@@ -4766,9 +4430,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 144,
@@ -4783,9 +4445,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 145,
@@ -4800,9 +4460,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 146,
@@ -4817,9 +4475,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 147,
@@ -4834,9 +4490,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 148,
@@ -4851,9 +4505,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 149,
@@ -4868,9 +4520,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 150,
@@ -4885,9 +4535,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 151,
@@ -4902,9 +4550,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 152,
@@ -4919,9 +4565,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 153,
@@ -4936,9 +4580,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 154,
@@ -4953,9 +4595,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 155,
@@ -4970,9 +4610,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 156,
@@ -4987,9 +4625,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 157,
@@ -5004,9 +4640,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 158,
@@ -5021,9 +4655,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 159,
@@ -5038,9 +4670,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 160,
@@ -5055,9 +4685,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 161,
@@ -5072,9 +4700,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 162,
@@ -5089,9 +4715,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 163,
@@ -5106,9 +4730,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 164,
@@ -5123,9 +4745,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 165,
@@ -5140,9 +4760,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 166,
@@ -5157,9 +4775,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 167,
@@ -5174,9 +4790,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 168,
@@ -5191,9 +4805,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 169,
@@ -5208,9 +4820,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 170,
@@ -5225,9 +4835,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 171,
@@ -5242,9 +4850,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 172,
@@ -5259,9 +4865,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 173,
@@ -5276,9 +4880,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 174,
@@ -5293,9 +4895,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 175,
@@ -5310,9 +4910,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 176,
@@ -5327,9 +4925,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 177,
@@ -5344,9 +4940,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 178,
@@ -5361,9 +4955,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 179,
@@ -5378,9 +4970,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 180,
@@ -5395,9 +4985,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 181,
@@ -5412,9 +5000,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 182,
@@ -5429,9 +5015,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 183,
@@ -5446,9 +5030,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 184,
@@ -5463,9 +5045,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 185,
@@ -5480,9 +5060,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 186,
@@ -5497,9 +5075,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 187,
@@ -5514,9 +5090,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 188,
@@ -5531,9 +5105,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 189,
@@ -5548,9 +5120,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 190,
@@ -5565,9 +5135,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 191,
@@ -5582,9 +5150,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 192,
@@ -5599,9 +5165,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 193,
@@ -5616,9 +5180,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 194,
@@ -5633,9 +5195,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 195,
@@ -5650,9 +5210,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 196,
@@ -5667,9 +5225,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 197,
@@ -5684,9 +5240,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 198,
@@ -5701,9 +5255,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 199,
@@ -5718,9 +5270,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 200,
@@ -5735,9 +5285,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 201,
@@ -5752,9 +5300,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 202,
@@ -5769,9 +5315,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 203,
@@ -5786,9 +5330,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 204,
@@ -5803,9 +5345,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 205,
@@ -5820,9 +5360,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 206,
@@ -5837,9 +5375,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 207,
@@ -5854,9 +5390,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 208,
@@ -5871,9 +5405,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 209,
@@ -5888,9 +5420,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 210,
@@ -5905,9 +5435,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 211,
@@ -5922,9 +5450,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 212,
@@ -5939,9 +5465,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 213,
@@ -5956,9 +5480,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 214,
@@ -5973,9 +5495,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 215,
@@ -5990,9 +5510,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 216,
@@ -6007,9 +5525,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 217,
@@ -6024,9 +5540,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 218,
@@ -6041,9 +5555,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 219,
@@ -6058,9 +5570,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 220,
@@ -6075,9 +5585,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 221,
@@ -6092,9 +5600,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 222,
@@ -6109,9 +5615,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 223,
@@ -6126,9 +5630,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 224,
@@ -6143,9 +5645,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 225,
@@ -6160,9 +5660,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 226,
@@ -6177,9 +5675,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 227,
@@ -6194,9 +5690,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 228,
@@ -6211,9 +5705,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 229,
@@ -6228,9 +5720,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 230,
@@ -6245,9 +5735,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 231,
@@ -6262,9 +5750,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 232,
@@ -6279,9 +5765,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 233,
@@ -6296,9 +5780,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 234,
@@ -6313,9 +5795,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 235,
@@ -6330,9 +5810,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 236,
@@ -6347,9 +5825,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 237,
@@ -6364,9 +5840,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 238,
@@ -6381,9 +5855,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 239,
@@ -6398,9 +5870,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 240,
@@ -6415,9 +5885,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 241,
@@ -6432,9 +5900,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 242,
@@ -6449,9 +5915,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 243,
@@ -6466,9 +5930,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 244,
@@ -6483,9 +5945,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 245,
@@ -6500,9 +5960,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 246,
@@ -6517,9 +5975,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 247,
@@ -6534,9 +5990,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 248,
@@ -6551,9 +6005,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 249,
@@ -6568,9 +6020,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 250,
@@ -6585,9 +6035,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 251,
@@ -6602,9 +6050,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 252,
@@ -6619,9 +6065,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 253,
@@ -6636,9 +6080,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 254,
@@ -6653,9 +6095,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 255,
@@ -6670,9 +6110,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 256,
@@ -6687,9 +6125,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 257,
@@ -6704,9 +6140,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 258,
@@ -6721,9 +6155,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 259,
@@ -6738,9 +6170,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 260,
@@ -6755,9 +6185,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 261,
@@ -6772,9 +6200,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 262,
@@ -6789,9 +6215,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 263,
@@ -6806,9 +6230,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 264,
@@ -6823,9 +6245,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 265,
@@ -6840,9 +6260,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 266,
@@ -6857,9 +6275,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 267,
@@ -6874,9 +6290,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 268,
@@ -6891,9 +6305,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 269,
@@ -6908,9 +6320,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 270,
@@ -6925,9 +6335,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": null,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 271,
@@ -6942,9 +6350,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 272,
@@ -6959,9 +6365,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 273,
@@ -6976,9 +6380,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 274,
@@ -6993,9 +6395,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 275,
@@ -7010,9 +6410,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 276,
@@ -7027,9 +6425,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 277,
@@ -7044,9 +6440,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 278,
@@ -7061,9 +6455,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 279,
@@ -7078,9 +6470,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 280,
@@ -7095,9 +6485,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 1,
         "service_standards": 0,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 281,
@@ -7112,9 +6500,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 282,
@@ -7129,9 +6515,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 283,
@@ -7146,9 +6530,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 0
     },
     {
         "id": 284,
@@ -7163,9 +6545,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 285,
@@ -7180,9 +6560,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:02",
-        "updated_at": "2017-05-26 19:27:02"
+        "performance_targets": 1
     },
     {
         "id": 286,
@@ -7197,9 +6575,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 287,
@@ -7214,9 +6590,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 288,
@@ -7231,9 +6605,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 289,
@@ -7248,9 +6620,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 290,
@@ -7265,9 +6635,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 291,
@@ -7282,9 +6650,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 292,
@@ -7299,9 +6665,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 293,
@@ -7316,9 +6680,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 294,
@@ -7333,9 +6695,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 295,
@@ -7350,9 +6710,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 0,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 0
     },
     {
         "id": 296,
@@ -7367,9 +6725,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 297,
@@ -7384,9 +6740,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 298,
@@ -7401,9 +6755,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 299,
@@ -7418,9 +6770,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 300,
@@ -7435,9 +6785,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 301,
@@ -7452,9 +6800,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 302,
@@ -7469,9 +6815,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 303,
@@ -7486,9 +6830,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 304,
@@ -7503,9 +6845,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 305,
@@ -7520,9 +6860,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 306,
@@ -7537,9 +6875,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 307,
@@ -7554,9 +6890,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 308,
@@ -7571,9 +6905,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 309,
@@ -7588,9 +6920,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 310,
@@ -7605,9 +6935,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 3,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 311,
@@ -7622,9 +6950,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 2,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 312,
@@ -7639,9 +6965,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 313,
@@ -7656,9 +6980,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 314,
@@ -7673,9 +6995,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 315,
@@ -7690,9 +7010,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 316,
@@ -7707,9 +7025,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 317,
@@ -7724,9 +7040,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 318,
@@ -7741,9 +7055,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 319,
@@ -7758,9 +7070,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 320,
@@ -7775,9 +7085,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 321,
@@ -7792,9 +7100,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 322,
@@ -7809,9 +7115,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 323,
@@ -7826,9 +7130,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 324,
@@ -7843,9 +7145,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 325,
@@ -7860,9 +7160,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 326,
@@ -7877,9 +7175,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 327,
@@ -7894,9 +7190,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 328,
@@ -7911,9 +7205,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 329,
@@ -7928,9 +7220,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 330,
@@ -7945,9 +7235,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 331,
@@ -7962,9 +7250,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 332,
@@ -7979,9 +7265,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 333,
@@ -7996,9 +7280,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 334,
@@ -8013,9 +7295,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 335,
@@ -8030,9 +7310,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 336,
@@ -8047,9 +7325,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 1,
         "service_standards": 1,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     },
     {
         "id": 337,
@@ -8064,9 +7340,7 @@ $.ajax(settings).done(function (response) {
         "service_orientation": 1,
         "user_fee": 0,
         "service_standards": 0,
-        "performance_targets": 1,
-        "created_at": "2017-05-26 19:27:03",
-        "updated_at": "2017-05-26 19:27:03"
+        "performance_targets": 1
     }
 ]
 ```
@@ -8121,9 +7395,7 @@ $.ajax(settings).done(function (response) {
     "service_orientation": 1,
     "user_fee": 0,
     "service_standards": 1,
-    "performance_targets": 1,
-    "created_at": "2017-05-26 19:27:00",
-    "updated_at": "2017-05-26 19:27:00"
+    "performance_targets": 1
 }
 ```
 
@@ -8170,36 +7442,28 @@ $.ajax(settings).done(function (response) {
         "service_id": 1,
         "channel_id": 1,
         "applications": 14,
-        "outputs": 3,
-        "created_at": "2017-05-26 19:27:00",
-        "updated_at": "2017-05-26 19:27:00"
+        "outputs": 3
     },
     {
         "id": 2,
         "service_id": 1,
         "channel_id": 2,
         "applications": null,
-        "outputs": null,
-        "created_at": "2017-05-26 19:27:00",
-        "updated_at": "2017-05-26 19:27:00"
+        "outputs": null
     },
     {
         "id": 3,
         "service_id": 1,
         "channel_id": 3,
         "applications": null,
-        "outputs": null,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "outputs": null
     },
     {
         "id": 4,
         "service_id": 1,
         "channel_id": 4,
         "applications": null,
-        "outputs": null,
-        "created_at": "2017-05-26 19:27:01",
-        "updated_at": "2017-05-26 19:27:01"
+        "outputs": null
     }
 ]
 ```
