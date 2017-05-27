@@ -3,8 +3,11 @@
 ### Api Docs
 > Browse: `/docs/index.html`
 
-### Import File
+### Import Spreadsheet
 > `storage/app/service_inventory_normalized.xlsx`
+
+### Local Development
+Best way to get things running locally is [Laravel Valet](https://laravel.com/docs/5.4/valet)
 
 ### Setup
 ```bash
