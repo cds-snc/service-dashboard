@@ -6,8 +6,8 @@
 ### Import File
 > `storage/app/service_inventory_normalized.xlsx`
 
+### Setup
 ```bash
-
 # Run migrations
 php artisan migrate
 
