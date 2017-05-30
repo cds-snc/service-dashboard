@@ -29,25 +29,32 @@ class ServiceTransformer extends AbstractTransformer
                 'name' => $service->program->name
             ],
             'authority' => $service->authority,
-            'service_agreements' => $service->service_agreements,
+            'service_agreements' => $service->service_agreements ? 'Yes' : 'No',
             'service_orientation' => $service->orientation,
-            'user_fee' => $service->user_fee,
-            'service_standards' => $service->service_standards,
-            'performance_targets' => $service->performance_targets
+            'user_fee' => $service->user_fee ? 'Yes' : 'No',
+            'service_standards' => $service->service_standards ? 'Yes' : 'No',
+            'performance_targets' => $service->performance_targets ? 'Yes' : 'No'
         ];
 
         if ($this->isRelationshipLoaded($service, 'specialDesignations')) {
-            $output['special_designations'] = SpecialDesignationTransformer::transform($service->specialDesignations);
+            if ($service->specialDesignations->count()) {
+                $output['special_designations'] = SpecialDesignationTransformer::transform($service->specialDesignations);
+            }
         }
 
         if ($this->isRelationshipLoaded($service, 'eservices')) {
-            $output['e_services'] = EServiceTransformer::transform($service->eservices);
+            $output['e_services'] = EServiceTransformer::transform($service->eservices->first());
         }
 
         if ($this->isRelationshipLoaded($service, 'channelVolumes')) {
             $total_applications = $service->channelVolumes->pluck('applications')->sum();
             $total_outputs = $service->channelVolumes->pluck('outputs')->sum();
-            $percent_complete = round($total_outputs / $total_applications * 100);
+
+            $percent_complete = 0;
+
+            if ($total_applications) {
+                $percent_complete = round($total_outputs / $total_applications * 100);
+            }
 
             $output['channel_volumes'] = [
                 'total_applications' => $total_applications,

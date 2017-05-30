@@ -7,16 +7,19 @@ class ChannelVolumeTransformer extends AbstractTransformer
 {
     public function transformModel(Model $item)
     {
+        $percent_complete = 0;
+
+        if ($item->outputs) {
+            $percent_complete = round($item->outputs / $item->applications * 100);
+        }
+
         $output = [
             'id' => $item->channel->id,
-            'channel' => $item->channel->name,
-            'applications' => $item->applications,
-            'outputs' => $item->outputs
+            'name' => $item->channel->name,
+            'applications' => is_null($item->applications) ? 'N/A' : $item->applications,
+            'outputs' => is_null($item->outputs) ? 'N/A' : $item->outputs,
+            'percent_complete' => $percent_complete
         ];
-
-        if ($this->isRelationshipLoaded($item, 'channel')) {
-            $output['channel'] = $item->channel->name;
-        }
 
         return $output;
     }
