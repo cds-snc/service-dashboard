@@ -1,22 +1,23 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+Route::get('/', function () {
+    return view('index');
+});
 
-use Illuminate\Support\Facades\Storage;
-use Maatwebsite\Excel\Facades\Excel;
+Route::get('departments/{department}', function(\App\Department $department) {
+    return view('department', [
+        'department' => $department
+    ]);
+});
 
-Route::get('/', function (\App\Importers\InventoryDataImport $import) {
+Route::get('programs/{program}', function(\App\Program $program) {
+    return view('program', [
+        'program' => $program
+    ]);
+});
 
-    $results = $import->all();
-    dd($results->first());
-
+Route::get('services/{service}', function(\App\Service $service) {
+    return view('service', [
+        'service' => $service
+    ]);
 });
