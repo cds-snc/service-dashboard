@@ -9,7 +9,7 @@ class ChannelVolumeTransformer extends AbstractTransformer
     {
         $percent_complete = 0;
 
-        if ($item->outputs) {
+        if ($item->applications) {
             $percent_complete = round($item->outputs / $item->applications * 100);
         }
 

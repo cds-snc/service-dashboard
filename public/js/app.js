@@ -1711,6 +1711,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['id'],
@@ -32264,8 +32281,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "container"
   }, [_c('h1', {
     staticClass: "title is-1"
-  }, [_vm._v(_vm._s(_vm.department.name))])])
-},staticRenderFns: []}
+  }, [_vm._v(_vm._s(_vm.department.name))]), _vm._v(" "), _c('table', {
+    staticClass: "table"
+  }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.department.services), function(service) {
+    return _c('tr', [_c('td', [_vm._v(_vm._s(service.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(service.service_id))]), _vm._v(" "), _c('td', [(service.service_type) ? _c('span', [_vm._v(_vm._s(service.service_type.name))]) : _vm._e()]), _vm._v(" "), _c('td', [(service.responsibility_area) ? _c('span', [_vm._v(_vm._s(service.responsibility_area.name))]) : _vm._e()]), _vm._v(" "), _c('td', [(service.program) ? _c('span', [_vm._v(_vm._s(service.program.name))]) : _vm._e()])])
+  })], 2)])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('tr', [_c('th', [_vm._v("Service Name")]), _vm._v(" "), _c('th', [_vm._v("ID")]), _vm._v(" "), _c('th', [_vm._v("Type")]), _vm._v(" "), _c('th', [_vm._v("Responsibility Area")]), _vm._v(" "), _c('th', [_vm._v("Program")])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()

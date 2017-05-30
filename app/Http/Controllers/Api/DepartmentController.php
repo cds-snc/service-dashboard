@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Department;
+use App\Transformers\DepartmentTransformer;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -23,9 +24,11 @@ class DepartmentController extends Controller
 
     /**
      * Get a Specific Department
+     * @param Department $department
+     * @return mixed
      */
     public function show(Department $department)
     {
-        return $department;
+        return DepartmentTransformer::transform($department);
     }
 }
