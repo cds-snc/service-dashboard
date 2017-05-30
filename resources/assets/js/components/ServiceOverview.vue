@@ -39,7 +39,7 @@
             <div class="column">
                 <dl class="service-details">
                     <dt>Service Type</dt>
-                    <dd>{{ service.service_type.name }}</dd>
+                    <dd v-if="service.service_type">{{ service.service_type.name }}</dd>
 
                     <dt v-if="service.special_designations">Special Designations</dt>
                     <dd><span v-for="designation in service.special_designations">{{ designation.name }}<br></span></dd>

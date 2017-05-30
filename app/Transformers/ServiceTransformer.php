@@ -12,10 +12,6 @@ class ServiceTransformer extends AbstractTransformer
             'name'		=> $service->name,
             'service_id' => $service->service_id_number,
             'description' => $service->description,
-            'service_type' => [
-                'id' => $service->serviceType->id,
-                'name' => $service->serviceType->name
-            ],
             'responsibility_area' => [
                 'id' => $service->responsibilityArea->id,
                 'name' => $service->responsibilityArea->name
@@ -35,6 +31,15 @@ class ServiceTransformer extends AbstractTransformer
             'service_standards' => $service->service_standards ? 'Yes' : 'No',
             'performance_targets' => $service->performance_targets ? 'Yes' : 'No'
         ];
+
+        if ($this->isRelationshipLoaded($service, 'serviceType')) {
+            if ($service->serviceType) {
+                $output['service_type'] = [
+                    'id' => $service->serviceType->id,
+                    'name' => $service->serviceType->name
+                ];
+            }
+        }
 
         if ($this->isRelationshipLoaded($service, 'specialDesignations')) {
             if ($service->specialDesignations->count()) {

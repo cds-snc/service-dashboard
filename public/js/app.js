@@ -32563,7 +32563,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "column"
   }, [_c('dl', {
     staticClass: "service-details"
-  }, [_c('dt', [_vm._v("Service Type")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.service_type.name))]), _vm._v(" "), (_vm.service.special_designations) ? _c('dt', [_vm._v("Special Designations")]) : _vm._e(), _vm._v(" "), _c('dd', _vm._l((_vm.service.special_designations), function(designation) {
+  }, [_c('dt', [_vm._v("Service Type")]), _vm._v(" "), (_vm.service.service_type) ? _c('dd', [_vm._v(_vm._s(_vm.service.service_type.name))]) : _vm._e(), _vm._v(" "), (_vm.service.special_designations) ? _c('dt', [_vm._v("Special Designations")]) : _vm._e(), _vm._v(" "), _c('dd', _vm._l((_vm.service.special_designations), function(designation) {
     return _c('span', [_vm._v(_vm._s(designation.name)), _c('br')])
   })), _vm._v(" "), _c('dt', [_vm._v("Service Agreements")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.service_agreements))]), _vm._v(" "), _c('dt', [_vm._v("Internal/External")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.service_orientation))])])]), _vm._v(" "), _c('div', {
     staticClass: "column"
