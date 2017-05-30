@@ -8,7 +8,7 @@ class Service extends Model
 {
     protected $guarded = [];
     protected $hidden = ['created_at', 'updated_at'];
-    protected $appends = ['department', 'e_services'];
+    protected $appends = ['department'];
     protected $with = ['serviceType', 'responsibilityArea', 'program', 'eservices', 'specialDesignations', 'channelVolumes'];
 
     protected $casts = [
