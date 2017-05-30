@@ -9,7 +9,6 @@ class Department extends Model
     protected $guarded = [];
 
     protected $hidden = ['created_at', 'updated_at'];
-    protected $with = ['programs'];
 
     public function programs()
     {
