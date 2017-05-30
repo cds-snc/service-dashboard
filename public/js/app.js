@@ -32578,16 +32578,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })], 2), _vm._v(" "), _c('h2', {
     staticClass: "title is-2"
   }, [_vm._v("eEnabled Services")]), _vm._v(" "), _c('div', {
-    staticClass: "level"
-  }, _vm._l((_vm.service.e_services.services), function(eservice) {
+    staticClass: "columns"
+  }, [_vm._l((_vm.service.e_services.services), function(eservice) {
     return _c('div', {
-      staticClass: "level-item has-text-centered"
-    }, [_c('div', {
-      staticClass: "card"
-    }, [_c('div', {
-      staticClass: "card-content"
-    }, [_vm._v("\n                    " + _vm._s(eservice.name)), _c('br'), _vm._v("\n                    " + _vm._s(eservice.enabled) + "\n                ")])])])
-  }))]) : _vm._e()
+      staticClass: "column has-text-centered"
+    }, [_c('strong', [_vm._v(_vm._s(eservice.name))]), _c('br'), _vm._v("\n            " + _vm._s(eservice.enabled) + "\n        ")])
+  }), _vm._v(" "), _c('div', {
+    staticClass: "column has-text-centered"
+  }, [_c('strong', [_vm._v("Estimated % of the service completed online")]), _c('br'), _vm._v("\n            " + _vm._s(_vm.service.e_services.score) + "\n        ")])], 2)]) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Channel")]), _vm._v(" "), _c('th', [_vm._v("Applications")]), _vm._v(" "), _c('th', [_vm._v("Outputs")]), _vm._v(" "), _c('th', [_vm._v("Percent Complete")])])
 }]}

@@ -11,42 +11,42 @@ class EServiceTransformer extends AbstractTransformer
 
         if (!is_null($item->account_registration)) {
             $services->push([
-                'name' => 'account_registration',
+                'name' => 'Account Registration / Enrollment',
                 'enabled' => $item->account_registration ? true : false
             ]);
         }
 
         if (!is_null($item->authentication)) {
             $services->push([
-                'name' => 'authentication',
+                'name' => 'Authentication',
                 'enabled' => $item->authentication ? true : false
             ]);
         }
 
         if (!is_null($item->application)) {
             $services->push([
-                'name' => 'application',
+                'name' => 'Application',
                 'enabled' => $item->application ? true : false
             ]);
         }
 
         if (!is_null($item->decision)) {
             $services->push([
-                'name' => 'decision',
+                'name' => 'Decision',
                 'enabled' => $item->decision ? true : false
             ]);
         }
 
         if (!is_null($item->issuance)) {
             $services->push([
-                'name' => 'issuance',
+                'name' => 'Issuance',
                 'enabled' => $item->issuance ? true : false
             ]);
         }
 
         if (!is_null($item->issue_resolution)) {
             $services->push([
-                'name' => 'issue_resolution',
+                'name' => 'Issue Resolution and Feedback',
                 'enabled' => $item->issue_resolution ? true : false
             ]);
         }
