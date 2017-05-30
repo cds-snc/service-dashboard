@@ -8,6 +8,9 @@ class Service extends Model
 {
     protected $guarded = [];
     protected $hidden = ['created_at', 'updated_at'];
+    protected $appends = ['department'];
+    protected $with = ['specialDesignations'];
+
 
     public function serviceType()
     {
@@ -22,6 +25,11 @@ class Service extends Model
     public function program()
     {
         return $this->belongsTo(Program::class);
+    }
+
+    public function getDepartmentAttribute()
+    {
+        return $this->program->department;
     }
 
     public function eservices()
