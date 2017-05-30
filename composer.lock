@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9bd73658c3445e7b1a698663f663679f",
+    "content-hash": "35dc50943ca624255c9e49932cb0c589",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2481,6 +2481,59 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2017-05-01T14:55:58+00:00"
+        },
+        {
+            "name": "themsaid/laravel-model-transformers",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/themsaid/laravel-model-transformer.git",
+                "reference": "8571bf423a7495c3c789e8ebe6a66e93e821d697"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/themsaid/laravel-model-transformer/zipball/8571bf423a7495c3c789e8ebe6a66e93e821d697",
+                "reference": "8571bf423a7495c3c789e8ebe6a66e93e821d697",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Themsaid\\Transformers\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ],
+                "classmap": [
+                    "tests"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mohamed Said",
+                    "email": "theMohamedSaid@gmail.com"
+                }
+            ],
+            "description": "Easy transformation layer for complex model attributes.",
+            "homepage": "https://github.com/themsaid/laravel-model-transformers",
+            "keywords": [
+                "api",
+                "json",
+                "laravel"
+            ],
+            "time": "2016-03-11T10:54:10+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",

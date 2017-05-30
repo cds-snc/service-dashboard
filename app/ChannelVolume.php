@@ -8,6 +8,7 @@ class ChannelVolume extends Model
 {
     protected $guarded = [];
     protected $hidden = ['created_at', 'updated_at'];
+    protected $with = ['channel'];
 
     public function service()
     {

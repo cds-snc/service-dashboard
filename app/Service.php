@@ -8,9 +8,15 @@ class Service extends Model
 {
     protected $guarded = [];
     protected $hidden = ['created_at', 'updated_at'];
-    protected $appends = ['department'];
-    protected $with = ['specialDesignations'];
+    protected $appends = ['department', 'e_services'];
+    protected $with = ['serviceType', 'responsibilityArea', 'program', 'eservices', 'specialDesignations', 'channelVolumes'];
 
+    protected $casts = [
+        'service_agreements' => 'boolean',
+        'user_fee' => 'boolean',
+        'service_standards' => 'boolean',
+        'performance_targets' => 'boolean'
+    ];
 
     public function serviceType()
     {
@@ -50,5 +56,19 @@ class Service extends Model
     public function channelVolumes()
     {
         return $this->hasMany(ChannelVolume::class);
+    }
+
+    public function getOrientationAttribute($value)
+    {
+        if ($value == 1) {
+            return 'External';
+        }
+        if ($value == 2) {
+            return 'Internal';
+        }
+        if ($value == 3) {
+            return 'Internal/External';
+        }
+        return 'N/A';
     }
 }
