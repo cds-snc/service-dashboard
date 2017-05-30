@@ -45,7 +45,16 @@ class ServiceTransformer extends AbstractTransformer
         }
 
         if ($this->isRelationshipLoaded($service, 'channelVolumes')) {
-            $output['channels'] = ChannelVolumeTransformer::transform($service->channelVolumes);
+            $total_applications = $service->channelVolumes->pluck('applications')->sum();
+            $total_outputs = $service->channelVolumes->pluck('outputs')->sum();
+            $percent_complete = round($total_outputs / $total_applications * 100);
+
+            $output['channel_volumes'] = [
+                'total_applications' => $total_applications,
+                'total_outputs' => $total_outputs,
+                'percent_complete' => $percent_complete,
+                'channels' => ChannelVolumeTransformer::transform($service->channelVolumes)
+            ];
         }
 
         return $output;
