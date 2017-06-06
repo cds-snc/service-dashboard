@@ -24,4 +24,28 @@ class Department extends Model
     {
         return $this->hasMany(ResponsibilityArea::class);
     }
+
+    public function getVolumesAttribute()
+    {
+        $channels = collect();
+        $volumes = collect();
+
+        foreach ($this->programs as $program) {
+            foreach($program->volumes as $channel) {
+                $volumes->push($channel);
+            }
+        }
+
+        $grouped = $volumes->groupBy('channel');
+
+        foreach ($grouped as $name => $channel) {
+            $channels->push([
+                'channel' => $name,
+                'applications' => $channel->sum('applications'),
+                'outputs' => $channel->sum('outputs')
+            ]);
+        }
+
+        return $channels;
+    }
 }
