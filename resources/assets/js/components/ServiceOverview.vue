@@ -1,5 +1,17 @@
 <template>
     <div class="container" v-if="service">
+        <nav class="nav">
+            <div class="nav-left">
+                <a href="" class="nav-item"><< Back</a>
+            </div>
+            <div class="nav-center">
+                <div class="nav-item">
+                    <h2 class="subtitle">SERVICE DASHBOARD</h2>
+                </div>
+            </div>
+            <div class="nav-right"></div>
+        </nav>
+
         <h1 class="title is-1 has-text-centered">{{ service.name }}</h1>
 
         <div class="level">

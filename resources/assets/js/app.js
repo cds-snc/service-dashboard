@@ -20,6 +20,7 @@ Vue.component('example', require('./components/Example.vue'));
 Vue.component('service-dashboard-search', require('./components/ServiceDashboardsSearch.vue'));
 Vue.component('department-overview', require('./components/DepartmentOverview.vue'));
 Vue.component('service-overview', require('./components/ServiceOverview.vue'));
+Vue.component('program-overview', require('./components/ProgramOverview.vue'));
 
 const app = new Vue({
     el: '#app'

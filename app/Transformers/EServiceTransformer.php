@@ -9,53 +9,43 @@ class EServiceTransformer extends AbstractTransformer
     {
         $services = collect();
 
-        if (!is_null($item->account_registration)) {
             $services->push([
                 'name' => 'Account Registration / Enrollment',
-                'enabled' => $item->account_registration ? true : false
+                'enabled' => $item->account_registration
             ]);
-        }
 
-        if (!is_null($item->authentication)) {
             $services->push([
                 'name' => 'Authentication',
-                'enabled' => $item->authentication ? true : false
+                'enabled' => $item->authentication
             ]);
-        }
 
-        if (!is_null($item->application)) {
             $services->push([
                 'name' => 'Application',
-                'enabled' => $item->application ? true : false
+                'enabled' => $item->application
             ]);
-        }
 
-        if (!is_null($item->decision)) {
             $services->push([
                 'name' => 'Decision',
-                'enabled' => $item->decision ? true : false
+                'enabled' => $item->decision
             ]);
-        }
 
-        if (!is_null($item->issuance)) {
             $services->push([
                 'name' => 'Issuance',
-                'enabled' => $item->issuance ? true : false
+                'enabled' => $item->issuance
             ]);
-        }
 
-        if (!is_null($item->issue_resolution)) {
             $services->push([
                 'name' => 'Issue Resolution and Feedback',
-                'enabled' => $item->issue_resolution ? true : false
+                'enabled' => $item->issue_resolution
             ]);
-        }
 
         $score = 0;
 
-        if ($services->count()) {
-            $total_services = $services->count();
-            $total_enabled = $services->where('enabled', true)->count();
+        $total_enabled = $services->whereStrict('enabled', 1)->count();
+        $total_disabled = $services->whereStrict('enabled', 0)->count();
+        $total_services = $total_enabled + $total_disabled;
+
+        if ($total_services) {
             $score = $total_enabled / $total_services * 100;
         }
 

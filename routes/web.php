@@ -4,6 +4,12 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('departments', function() {
+    return view('departments', [
+
+    ]);
+});
+
 Route::get('departments/{department}', function(\App\Department $department) {
     return view('department', [
         'department' => $department

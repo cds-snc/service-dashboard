@@ -9,8 +9,16 @@ class DepartmentTransformer extends AbstractTransformer
     {
         $output = [
             'name' => $department->name,
-            'services' => ServiceTransformer::transform($department->services)
+            'volumes' => $department->volumes
         ];
+
+        if (in_array('services', $this->options)) {
+            $output['services'] = ServiceTransformer::transform($department->services);
+        }
+
+        if (in_array('programs', $this->options)) {
+            $output['programs'] = ProgramTransformer::transform($department->programs);
+        }
 
         return $output;
     }

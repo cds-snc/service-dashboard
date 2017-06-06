@@ -9,6 +9,7 @@ class ServiceTransformer extends AbstractTransformer
     public function transformModel(Model $service)
     {
         $output = [
+            'id' => $service->id,
             'name'		=> $service->name,
             'service_id' => $service->service_id_number,
             'description' => $service->description,
