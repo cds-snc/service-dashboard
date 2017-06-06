@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Program;
+use App\Transformers\ProgramTransformer;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -20,6 +21,6 @@ class ProgramController extends Controller
      */
     public function show(Program $program)
     {
-        return $program;
+        return ProgramTransformer::transform($program);
     }
 }
