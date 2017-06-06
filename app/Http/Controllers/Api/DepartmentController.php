@@ -29,6 +29,8 @@ class DepartmentController extends Controller
      */
     public function show(Department $department)
     {
-        return DepartmentTransformer::transform($department);
+        $includes = explode(',', request('include'));
+
+        return DepartmentTransformer::transform($department, $includes);
     }
 }
