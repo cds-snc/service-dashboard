@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1 class="title is-1">{{ program.name }}</h1>
+        <dashboard-header :title="program.name"></dashboard-header>
 
         <table class="table">
             <tr>

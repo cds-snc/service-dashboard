@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1 class="title is-1">{{ department.name }}</h1>
+        <dashboard-header :title="department.name"></dashboard-header>
 
         <h2 class="subtitle is-2">Service Volumes</h2>
 
