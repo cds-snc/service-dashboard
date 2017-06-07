@@ -2,7 +2,7 @@
     <div class="container">
         <dashboard-header :title="department.name"></dashboard-header>
 
-        <h2 class="subtitle is-2">Service Volumes</h2>
+        <h2 class="title is-3">Service Volume by Program</h2>
 
         <table class="table">
             <tr>
@@ -14,7 +14,7 @@
             </tr>
             <tr v-for="program in department.programs">
                 <td><a :href="'/programs/' + program.id">{{ program.name }}</a></td>
-                <td v-for="channel in program.volumes">{{ channel.applications }}</td>
+                <td v-for="channel in program.channel_volumes.channels">{{ channel.applications }}</td>
             </tr>
         </table>
     </div>

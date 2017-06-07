@@ -8,13 +8,13 @@
 
             </div>
             <div class="nav-right nav-menu">
-                <a href="/" class="nav-item">Services</a>
+                <a href="/" class="nav-item">Search</a>
                 <a href="/departments" class="nav-item">Departments</a>
-                <a href="" class="nav-item">Service Volumes</a>
-                <a href="" class="nav-item">Completion Rates</a>
             </div>
         </nav>
-        <h1 class="title is-1 has-text-centered">{{ title }}</h1>
+
+        <h1 class="title has-text-centered">{{ title }}</h1>
+
     </div>
 </template>
 

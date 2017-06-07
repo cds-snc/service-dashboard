@@ -19,7 +19,7 @@ class DepartmentController extends Controller
      */
     public function index()
     {
-        return Department::all();
+        return DepartmentTransformer::transform(Department::all());
     }
 
     /**

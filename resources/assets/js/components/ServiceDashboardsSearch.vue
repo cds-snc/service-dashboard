@@ -1,6 +1,6 @@
 <<template>
     <div class="container">
-        <dashboard-header :title="'Search Services'"></dashboard-header>
+        <dashboard-header :title="'Services'"></dashboard-header>
 
         <div class="field">
             <label for="filter" class="sr-only">Filter</label>

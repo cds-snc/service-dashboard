@@ -8,8 +8,8 @@ class DepartmentTransformer extends AbstractTransformer
     public function transformModel(Model $department)
     {
         $output = [
-            'name' => $department->name,
-            'volumes' => $department->volumes
+            'id' => $department->id,
+            'name' => $department->name
         ];
 
         if (in_array('services', $this->options)) {
@@ -19,6 +19,22 @@ class DepartmentTransformer extends AbstractTransformer
         if (in_array('programs', $this->options)) {
             $output['programs'] = ProgramTransformer::transform($department->programs);
         }
+
+        $total_applications = $department->volumes->pluck('applications')->sum();
+        $total_outputs = $department->volumes->pluck('outputs')->sum();
+
+        $percent_complete = 0;
+
+        if ($total_applications) {
+            $percent_complete = round($total_outputs / $total_applications * 100);
+        }
+
+        $output['channel_volumes'] = [
+            'total_applications' => $total_applications,
+            'total_outputs' => $total_outputs,
+            'percent_complete' => $percent_complete,
+            'channels' => $department->volumes
+        ];
 
         return $output;
     }

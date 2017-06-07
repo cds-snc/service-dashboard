@@ -5,9 +5,7 @@ Route::get('/', function () {
 });
 
 Route::get('departments', function() {
-    return view('departments', [
-
-    ]);
+    return view('departments');
 });
 
 Route::get('departments/{department}', function(\App\Department $department) {

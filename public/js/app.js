@@ -845,6 +845,7 @@ window.Vue = __webpack_require__(54);
 Vue.component('example', __webpack_require__(42));
 
 Vue.component('dashboard-header', __webpack_require__(60));
+Vue.component('departments', __webpack_require__(64));
 Vue.component('service-dashboard-search', __webpack_require__(44));
 Vue.component('department-overview', __webpack_require__(41));
 Vue.component('service-overview', __webpack_require__(45));
@@ -1781,6 +1782,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -32363,15 +32365,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "title": _vm.department.name
     }
   }), _vm._v(" "), _c('h2', {
-    staticClass: "subtitle is-2"
-  }, [_vm._v("Service Volumes")]), _vm._v(" "), _c('table', {
+    staticClass: "title is-3"
+  }, [_vm._v("Service Volume by Program")]), _vm._v(" "), _c('table', {
     staticClass: "table"
   }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.department.programs), function(program) {
     return _c('tr', [_c('td', [_c('a', {
       attrs: {
         "href": '/programs/' + program.id
       }
-    }, [_vm._v(_vm._s(program.name))])]), _vm._v(" "), _vm._l((program.volumes), function(channel) {
+    }, [_vm._v(_vm._s(program.name))])]), _vm._v(" "), _vm._l((program.channel_volumes.channels), function(channel) {
       return _c('td', [_vm._v(_vm._s(channel.applications))])
     })], 2)
   })], 2)], 1)
@@ -32395,7 +32397,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "container"
   }, [_c('dashboard-header', {
     attrs: {
-      "title": 'Search Services'
+      "title": 'Services'
     }
   }), _vm._v(" "), _c('div', {
     staticClass: "field"
@@ -32724,17 +32726,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "title": _vm.program.name
     }
-  }), _vm._v(" "), _c('table', {
+  }), _vm._v(" "), _c('h2', {
+    staticClass: "title is-3"
+  }, [_vm._v("Service Volume by Service")]), _vm._v(" "), _c('table', {
     staticClass: "table"
   }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.program.services), function(service) {
     return _c('tr', [_c('td', [_c('a', {
       attrs: {
         "href": '/services/' + service.id
       }
-    }, [_vm._v(_vm._s(service.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(service.service_id))]), _vm._v(" "), _c('td', [(service.service_type) ? _c('span', [_vm._v(_vm._s(service.service_type.name))]) : _vm._e()]), _vm._v(" "), _c('td', [(service.responsibility_area) ? _c('span', [_vm._v(_vm._s(service.responsibility_area.name))]) : _vm._e()])])
+    }, [_vm._v(_vm._s(service.name))])]), _vm._v(" "), _vm._l((service.channel_volumes.channels), function(channel) {
+      return _c('td', [_vm._v(_vm._s(channel.applications))])
+    })], 2)
   })], 2)], 1)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('tr', [_c('th', [_vm._v("Service Name")]), _vm._v(" "), _c('th', [_vm._v("ID")]), _vm._v(" "), _c('th', [_vm._v("Type")]), _vm._v(" "), _c('th', [_vm._v("Responsibility Area")])])
+  return _c('tr', [_c('th', [_vm._v("Service")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -42832,7 +42838,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_vm._m(0), _vm._v(" "), _c('h1', {
-    staticClass: "title is-1 has-text-centered"
+    staticClass: "title has-text-centered"
   }, [_vm._v(_vm._s(_vm.title))])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('nav', {
@@ -42855,28 +42861,160 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": "/"
     }
-  }, [_vm._v("Services")]), _vm._v(" "), _c('a', {
+  }, [_vm._v("Search")]), _vm._v(" "), _c('a', {
     staticClass: "nav-item",
     attrs: {
       "href": "/departments"
     }
-  }, [_vm._v("Departments")]), _vm._v(" "), _c('a', {
-    staticClass: "nav-item",
-    attrs: {
-      "href": ""
-    }
-  }, [_vm._v("Service Volumes")]), _vm._v(" "), _c('a', {
-    staticClass: "nav-item",
-    attrs: {
-      "href": ""
-    }
-  }, [_vm._v("Completion Rates")])])])
+  }, [_vm._v("Departments")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
      require("vue-hot-reload-api").rerender("data-v-f1269a66", module.exports)
+  }
+}
+
+/***/ }),
+/* 63 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            departments: []
+        };
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        axios.get('/api/departments/').then(function (response) {
+            _this.departments = response.data;
+        });
+    }
+});
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(63),
+  /* template */
+  __webpack_require__(65),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/samojled/Code/service-dashboard/resources/assets/js/components/Departments.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Departments.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-2895ac26", Component.options)
+  } else {
+    hotAPI.reload("data-v-2895ac26", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "container"
+  }, [_c('dashboard-header', {
+    attrs: {
+      "title": 'Departments'
+    }
+  }), _vm._v(" "), _c('h2', {
+    staticClass: "subtitle is-2"
+  }, [_vm._v("Service Volume by Department")]), _vm._v(" "), _c('table', {
+    staticClass: "table"
+  }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.departments), function(department) {
+    return _c('tr', [_c('td', [_c('a', {
+      attrs: {
+        "href": '/departments/' + department.id
+      }
+    }, [_vm._v(_vm._s(department.name))])]), _vm._v(" "), _vm._l((department.channel_volumes.channels), function(channel) {
+      return _c('td', [_vm._v(_vm._s(channel.applications))])
+    })], 2)
+  })], 2), _vm._v(" "), _c('h2', {
+    staticClass: "subtitle is-2"
+  }, [_vm._v("Completion Rates")]), _vm._v(" "), _c('table', {
+    staticClass: "table"
+  }, [_vm._m(1), _vm._v(" "), _vm._l((_vm.departments), function(department) {
+    return _c('tr', [_c('td', [_c('a', {
+      attrs: {
+        "href": '/departments/' + department.id
+      }
+    }, [_vm._v(_vm._s(department.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.total_applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.total_outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.percent_complete))])])
+  })], 2)], 1)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('tr', [_c('th', [_vm._v("Department Name")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('tr', [_c('th', [_vm._v("Department Name")]), _vm._v(" "), _c('th', [_vm._v("Applications")]), _vm._v(" "), _c('th', [_vm._v("Outputs")]), _vm._v(" "), _c('th', [_vm._v("Percent Complete")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-2895ac26", module.exports)
   }
 }
 

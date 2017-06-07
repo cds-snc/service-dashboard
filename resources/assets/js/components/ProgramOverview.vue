@@ -2,18 +2,19 @@
     <div class="container">
         <dashboard-header :title="program.name"></dashboard-header>
 
+        <h2 class="title is-3">Service Volume by Service</h2>
+
         <table class="table">
             <tr>
-                <th>Service Name</th>
-                <th>ID</th>
-                <th>Type</th>
-                <th>Responsibility Area</th>
+                <th>Service</th>
+                <th>Online</th>
+                <th>In Person</th>
+                <th>Telephone</th>
+                <th>Mail</th>
             </tr>
             <tr v-for="service in program.services">
                 <td><a :href="'/services/' + service.id">{{ service.name }}</a></td>
-                <td>{{ service.service_id }}</td>
-                <td><span v-if="service.service_type">{{ service.service_type.name }}</span></td>
-                <td><span v-if="service.responsibility_area">{{ service.responsibility_area.name }}</span></td>
+                <td v-for="channel in service.channel_volumes.channels">{{ channel.applications }}</td>
             </tr>
         </table>
     </div>
