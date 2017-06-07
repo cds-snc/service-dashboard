@@ -46,7 +46,7 @@ class EServiceTransformer extends AbstractTransformer
         $total_services = $total_enabled + $total_disabled;
 
         if ($total_services) {
-            $score = $total_enabled / $total_services * 100;
+            $score = round($total_enabled / $total_services * 100);
         }
 
         $output = [
