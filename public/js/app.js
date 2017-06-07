@@ -1857,6 +1857,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['id'],
@@ -32813,7 +32829,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "service-details"
   }, [_c('dt', [_vm._v("Service Standards")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.service_standards))]), _vm._v(" "), _c('dt', [_vm._v("Performance Targets")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.performance_targets))]), _vm._v(" "), _c('dt', [_vm._v("User Fee")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.user_fee))])])])]), _vm._v(" "), _c('h2', {
     staticClass: "title is-2"
-  }, [_vm._v("Transaction Volume by Channel")]), _vm._v(" "), _c('table', {
+  }, [_vm._v("Service Volume by Channel")]), _vm._v(" "), _c('table', {
     staticClass: "table"
   }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.service.channel_volumes.channels), function(channel) {
     return _c('tr', [_c('td', [_vm._v(_vm._s(channel.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.percent_complete) + "%")])])
@@ -32878,9 +32894,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "heading"
   }, [_vm._v("Completion Rate")])])])]), _vm._v(" "), _c('h2', {
     staticClass: "title is-3"
-  }, [_vm._v("Service Volume by Service")]), _vm._v(" "), _c('table', {
+  }, [_vm._v("Service Volume by Channel")]), _vm._v(" "), _c('table', {
     staticClass: "table"
-  }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.program.services), function(service) {
+  }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.program.channel_volumes.channels), function(channel) {
+    return _c('tr', [_c('td', [_vm._v(_vm._s(channel.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.percent_complete) + "%")])])
+  })], 2), _vm._v(" "), _c('h2', {
+    staticClass: "title is-3"
+  }, [_vm._v("Services")]), _vm._v(" "), _c('table', {
+    staticClass: "table"
+  }, [_vm._m(1), _vm._v(" "), _vm._l((_vm.program.services), function(service) {
     return _c('tr', [_c('td', [_c('a', {
       attrs: {
         "href": '/services/' + service.id
@@ -32890,6 +32912,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     })], 2)
   })], 2)]) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('tr', [_c('th', [_vm._v("Channel")]), _vm._v(" "), _c('th', [_vm._v("Applications")]), _vm._v(" "), _c('th', [_vm._v("Outputs")]), _vm._v(" "), _c('th', [_vm._v("Percent Complete")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Service")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
 }]}
 module.exports.render._withStripped = true

@@ -14,8 +14,8 @@ class ProgramTransformer extends AbstractTransformer
             'services' => ServiceTransformer::transform($program->services)
         ];
 
-        $total_applications = $program->volumes->pluck('applications')->sum();
-        $total_outputs = $program->volumes->pluck('outputs')->sum();
+        $total_applications = $program->channelVolumes->pluck('applications')->sum();
+        $total_outputs = $program->channelVolumes->pluck('outputs')->sum();
 
         $percent_complete = 0;
 
@@ -27,9 +27,32 @@ class ProgramTransformer extends AbstractTransformer
             'total_applications' => $total_applications,
             'total_outputs' => $total_outputs,
             'percent_complete' => $percent_complete,
-            'channels' => $program->volumes
+            'channels' => $this->getChannels($program->channelVolumes)
         ];
 
         return $output;
+    }
+
+    protected function getChannels($data)
+    {
+        $result = $data->groupBy('channel.name')->map(function ($item) {
+            $applications = $item->pluck('applications')->sum();
+            $outputs = $item->pluck('outputs')->sum();
+
+            $percent_complete = 0;
+
+            if ($applications) {
+                $percent_complete = round($outputs / $applications * 100);
+            }
+
+            return [
+                'name' => $item->first()->channel->name,
+                'applications' => $applications,
+                'outputs' => $outputs,
+                'percent_complete' => $percent_complete
+            ];
+        });
+
+        return array_values($result->toArray());
     }
 }

@@ -29,7 +29,23 @@
             </div>
         </div>
 
-        <h2 class="title is-3">Service Volume by Service</h2>
+        <h2 class="title is-3">Service Volume by Channel</h2>
+        <table class="table">
+            <tr>
+                <th>Channel</th>
+                <th>Applications</th>
+                <th>Outputs</th>
+                <th>Percent Complete</th>
+            </tr>
+            <tr v-for="channel in program.channel_volumes.channels">
+                <td>{{ channel.name }}</td>
+                <td>{{ channel.applications }}</td>
+                <td>{{ channel.outputs }}</td>
+                <td>{{ channel.percent_complete }}%</td>
+            </tr>
+        </table>
+
+        <h2 class="title is-3">Services</h2>
 
         <table class="table">
             <tr>

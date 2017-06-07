@@ -78,7 +78,7 @@
             </div>
         </div>
 
-        <h2 class="title is-2">Transaction Volume by Channel</h2>
+        <h2 class="title is-2">Service Volume by Channel</h2>
 
         <table class="table">
             <tr>
