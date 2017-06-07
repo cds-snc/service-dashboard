@@ -1,7 +1,11 @@
 <?php
 
-Route::get('/', function () {
+Route::get('/', function() {
     return view('index');
+});
+
+Route::get('/search', function () {
+    return view('search');
 });
 
 Route::get('departments', function() {

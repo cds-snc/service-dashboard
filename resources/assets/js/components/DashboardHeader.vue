@@ -1,16 +1,10 @@
 <template>
     <div class="header">
         <nav class="nav">
-            <div class="nav-left">
-                <a href="/" class="nav-item"><h1 class="subtitle">SERVICE DASHBOARD</h1></a>
-            </div>
-            <div class="nav-center">
-
-            </div>
-            <div class="nav-right nav-menu">
-                <a href="/" class="nav-item">Search</a>
-                <a href="/departments" class="nav-item">Departments</a>
-            </div>
+            <a href="/" class="nav-item"><h1 class="subtitle">SERVICE DASHBOARD</h1></a>
+            <a href="/" class="nav-item">Home</a>
+            <a href="/departments" class="nav-item">Departments</a>
+            <a href="/search" class="nav-item">Search</a>
         </nav>
     </div>
 </template>
