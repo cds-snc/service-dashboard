@@ -1,7 +1,7 @@
 <<template>
     <div>
         <div class="field">
-            <label for="filter" class="title">Search Services</label>
+            <label for="filter" class="subtitle">Search Services</label>
             <input type="text" v-model="filter" id="filter" name="filter" class="input is-large" placeholder="Filter by Department, Service Name, or Program Name">
         </div>
 
