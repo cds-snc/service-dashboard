@@ -1916,6 +1916,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -1965,13 +1969,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 if (_this2.selected_type == 'any') {
                     return true;
                 }
-                return service.service_type_id == _this2.selected_type;
+                if (service.service_type) {
+                    return service.service_type.id == _this2.selected_type;
+                }
             }).filter(function (service) {
                 if (_this2.selected_designation == 'any') {
                     return true;
                 }
                 if (_this2.selected_designation.name == 'None') {
-                    return service.special_designations.length == 0;
+                    if (service.special_designations) {
+                        return service.special_designations.length == 0;
+                    }
                 }
                 return _.find(service.special_designations, { 'id': _this2.selected_designation.id });
             });
@@ -32461,11 +32469,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Any")]), _vm._v(" "), _c('option', {
     attrs: {
-      "value": "1"
+      "value": "External"
     }
   }, [_vm._v("External")]), _vm._v(" "), _c('option', {
     attrs: {
-      "value": "2"
+      "value": "Internal"
     }
   }, [_vm._v("Internal")])])])])])]), _vm._v(" "), _c('div', {
     staticClass: "column"
@@ -32508,11 +32516,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Any")]), _vm._v(" "), _c('option', {
     attrs: {
-      "value": "1"
+      "value": "Yes"
     }
   }, [_vm._v("Yes")]), _vm._v(" "), _c('option', {
     attrs: {
-      "value": "0"
+      "value": "No"
     }
   }, [_vm._v("No")])])])])])]), _vm._v(" "), _c('div', {
     staticClass: "column"
@@ -32605,7 +32613,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_vm._v(_vm._s(type.name))])
   })], 2)])])])])]), _vm._v(" "), (_vm.filteredServices.length) ? _c('table', {
-    staticClass: "table is-striped services"
+    staticClass: "table is-striped is-bordered services"
   }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.filteredServices), function(service) {
     return _c('tr', [_c('td', [_c('a', {
       attrs: {
@@ -32619,12 +32627,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       attrs: {
         "href": '/services/' + service.id
       }
-    }, [_vm._v(_vm._s(service.name))])])])
+    }, [_vm._v(_vm._s(service.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(service.channel_volumes.total_applications) + "/" + _vm._s(service.channel_volumes.total_outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(service.channel_volumes.percent_complete) + "%")])])
   })], 2) : _c('div', {
     staticClass: "notification"
   }, [_vm._v("\n        No Services Found\n    ")])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('tr', [_c('th', [_vm._v("Department")]), _vm._v(" "), _c('th', [_vm._v("Program")]), _vm._v(" "), _c('th', [_vm._v("Service Name")])])
+  return _c('tr', [_c('th', [_vm._v("Department")]), _vm._v(" "), _c('th', [_vm._v("Program")]), _vm._v(" "), _c('th', [_vm._v("Service Name")]), _vm._v(" "), _c('th', [_vm._v("Applications/Outputs")]), _vm._v(" "), _c('th', [_vm._v("Completion Rate")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -42804,12 +42812,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['title']
@@ -42826,8 +42828,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "header"
   }, [_c('nav', {
     staticClass: "nav"
-  }, [_c('div', {
-    staticClass: "nav-left"
   }, [_c('a', {
     staticClass: "nav-item",
     attrs: {
@@ -42835,21 +42835,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('h1', {
     staticClass: "subtitle"
-  }, [_vm._v("SERVICE DASHBOARD")])])]), _vm._v(" "), _c('div', {
-    staticClass: "nav-center"
-  }), _vm._v(" "), _c('div', {
-    staticClass: "nav-right nav-menu"
-  }, [_c('a', {
+  }, [_vm._v("SERVICE DASHBOARD")])]), _vm._v(" "), _c('a', {
     staticClass: "nav-item",
     attrs: {
       "href": "/"
     }
-  }, [_vm._v("Search")]), _vm._v(" "), _c('a', {
+  }, [_vm._v("Home")]), _vm._v(" "), _c('a', {
     staticClass: "nav-item",
     attrs: {
       "href": "/departments"
     }
-  }, [_vm._v("Departments")])])])])
+  }, [_vm._v("Departments")]), _vm._v(" "), _c('a', {
+    staticClass: "nav-item",
+    attrs: {
+      "href": "/search"
+    }
+  }, [_vm._v("Search")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
