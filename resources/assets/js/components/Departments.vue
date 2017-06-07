@@ -29,7 +29,7 @@
                 <td><a :href="'/departments/' + department.id">{{ department.name }}</a></td>
                 <td>{{ department.channel_volumes.total_applications }}</td>
                 <td>{{ department.channel_volumes.total_outputs }}</td>
-                <td>{{ department.channel_volumes.percent_complete }}</td>
+                <td>{{ department.channel_volumes.percent_complete }}%</td>
             </tr>
         </table>
     </div>
