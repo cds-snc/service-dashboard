@@ -10,6 +10,7 @@ class ProgramTransformer extends AbstractTransformer
         $output = [
             'id' => $program->id,
             'name' => $program->name,
+            'department' => $program->department,
             'services' => ServiceTransformer::transform($program->services)
         ];
 

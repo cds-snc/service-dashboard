@@ -1,6 +1,33 @@
 <template>
-    <div class="container">
+    <div v-if="program">
+        <div class="breadcrumbs">
+            <a href="/">Home</a> >
+            <a :href="'/departments/' + program.department.id">{{ program.department.name }}</a> >
+            {{ program.name }}
+        </div>
+
         <h1 class="title has-text-centered">{{ program.name }}</h1>
+
+        <div class="level">
+            <div class="level-item has-text-centered">
+                <div>
+                    <h2 class="title is-1">{{ program.channel_volumes.total_applications }}</h2>
+                    <p class="heading">Applications</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <h2 class="title is-1">{{ program.channel_volumes.total_outputs }}</h2>
+                    <p class="heading">Outputs</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <h2 class="title is-1">{{ program.channel_volumes.percent_complete }}%</h2>
+                    <p class="heading">Completion Rate</p>
+                </div>
+            </div>
+        </div>
 
         <h2 class="title is-3">Service Volume by Service</h2>
 
@@ -25,7 +52,7 @@
         props: ['id'],
         data() {
             return {
-                program: []
+                program: null
             }
         },
         mounted() {

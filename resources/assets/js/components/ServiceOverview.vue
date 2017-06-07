@@ -1,12 +1,25 @@
 <template>
-    <div class="container" v-if="service">
+    <div v-if="service">
+        <div class="breadcrumbs">
+            <a href="/">Home</a> >
+            <a :href="'/departments/' + service.department.id">{{ service.department.name }}</a> >
+            <a :href="'/programs/' + service.program.id">{{ service.program.name }}</a> >
+            {{ service.name }}
+        </div>
+
         <h1 class="title has-text-centered">{{ service.name }}</h1>
 
         <div class="level">
             <div class="level-item has-text-centered">
                 <div>
+                    <h2 class="title is-1">{{ service.channel_volumes.total_applications }}</h2>
+                    <p class="heading">Applications</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
                     <h2 class="title is-1">{{ service.channel_volumes.total_outputs }}</h2>
-                    <p class="heading">Transactions</p>
+                    <p class="heading">Outputs</p>
                 </div>
             </div>
             <div class="level-item has-text-centered">
@@ -24,10 +37,10 @@
             <div class="column">
                 <dl class="service-details">
                     <dt>Service Owner</dt>
-                    <dd>{{ service.department.name }}</dd>
+                    <dd><a :href="'/departments/' + service.department.id">{{ service.department.name }}</a></dd>
 
                     <dt>Program Name</dt>
-                    <dd>{{ service.program.name }}</dd>
+                    <dd><a :href="'/programs/' + service.program.id">{{ service.program.name }}</a></dd>
 
                     <dt>Responsibility Area</dt>
                     <dd>{{ service.responsibility_area.name }}</dd>
@@ -65,7 +78,7 @@
             </div>
         </div>
 
-        <h2 class="title is-2">Transaction Volume</h2>
+        <h2 class="title is-2">Transaction Volume by Channel</h2>
 
         <table class="table">
             <tr>

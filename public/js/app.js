@@ -1730,12 +1730,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['id'],
     data: function data() {
         return {
-            department: []
+            department: null
         };
     },
     mounted: function mounted() {
@@ -1804,12 +1830,39 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['id'],
     data: function data() {
         return {
-            program: []
+            program: null
         };
     },
     mounted: function mounted() {
@@ -1827,6 +1880,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1993,6 +2051,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -32363,11 +32434,35 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "container"
-  }, [_c('h1', {
+  return (_vm.department) ? _c('div', [_c('div', {
+    staticClass: "breadcrumbs"
+  }, [_c('a', {
+    attrs: {
+      "href": "/"
+    }
+  }, [_vm._v("Home")]), _vm._v(" >\n        " + _vm._s(_vm.department.name) + "\n    ")]), _vm._v(" "), _c('h1', {
     staticClass: "title has-text-centered"
-  }, [_vm._v(_vm._s(_vm.department.name))]), _vm._v(" "), _c('h2', {
+  }, [_vm._v(_vm._s(_vm.department.name))]), _vm._v(" "), _c('div', {
+    staticClass: "level"
+  }, [_c('div', {
+    staticClass: "level-item has-text-centered"
+  }, [_c('div', [_c('h2', {
+    staticClass: "title is-1"
+  }, [_vm._v(_vm._s(_vm.department.channel_volumes.total_applications))]), _vm._v(" "), _c('p', {
+    staticClass: "heading"
+  }, [_vm._v("Applications")])])]), _vm._v(" "), _c('div', {
+    staticClass: "level-item has-text-centered"
+  }, [_c('div', [_c('h2', {
+    staticClass: "title is-1"
+  }, [_vm._v(_vm._s(_vm.department.channel_volumes.total_outputs))]), _vm._v(" "), _c('p', {
+    staticClass: "heading"
+  }, [_vm._v("Outputs")])])]), _vm._v(" "), _c('div', {
+    staticClass: "level-item has-text-centered"
+  }, [_c('div', [_c('h2', {
+    staticClass: "title is-1"
+  }, [_vm._v(_vm._s(_vm.department.channel_volumes.percent_complete) + "%")]), _vm._v(" "), _c('p', {
+    staticClass: "heading"
+  }, [_vm._v("Completion Rate")])])])]), _vm._v(" "), _c('h2', {
     staticClass: "title is-3"
   }, [_vm._v("Service Volume by Program")]), _vm._v(" "), _c('table', {
     staticClass: "table"
@@ -32379,7 +32474,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_vm._v(_vm._s(program.name))])]), _vm._v(" "), _vm._l((program.channel_volumes.channels), function(channel) {
       return _c('td', [_vm._v(_vm._s(channel.applications))])
     })], 2)
-  })], 2)])
+  })], 2)]) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Program")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
 }]}
@@ -32396,7 +32491,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
+  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', {
     staticClass: "field"
   }, [_c('label', {
     staticClass: "subtitle",
@@ -32613,7 +32708,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_vm._v(_vm._s(type.name))])
   })], 2)])])])])]), _vm._v(" "), (_vm.filteredServices.length) ? _c('table', {
     staticClass: "table is-striped is-bordered services"
-  }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.filteredServices), function(service) {
+  }, [_vm._m(1), _vm._v(" "), _vm._l((_vm.filteredServices), function(service) {
     return _c('tr', [_c('td', [_c('a', {
       attrs: {
         "href": '/departments/' + service.department.id
@@ -32631,6 +32726,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "notification"
   }, [_vm._v("\n        No Services Found\n    ")])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "breadcrumbs"
+  }, [_c('a', {
+    attrs: {
+      "href": "/"
+    }
+  }, [_vm._v("Home")]), _vm._v(" >\n        Search\n    ")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Department")]), _vm._v(" "), _c('th', [_vm._v("Program")]), _vm._v(" "), _c('th', [_vm._v("Service Name")]), _vm._v(" "), _c('th', [_vm._v("Applications/Outputs")]), _vm._v(" "), _c('th', [_vm._v("Completion Rate")])])
 }]}
 module.exports.render._withStripped = true
@@ -32646,9 +32749,21 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.service) ? _c('div', {
-    staticClass: "container"
-  }, [_c('h1', {
+  return (_vm.service) ? _c('div', [_c('div', {
+    staticClass: "breadcrumbs"
+  }, [_c('a', {
+    attrs: {
+      "href": "/"
+    }
+  }, [_vm._v("Home")]), _vm._v(" >\n        "), _c('a', {
+    attrs: {
+      "href": '/departments/' + _vm.service.department.id
+    }
+  }, [_vm._v(_vm._s(_vm.service.department.name))]), _vm._v(" >\n        "), _c('a', {
+    attrs: {
+      "href": '/programs/' + _vm.service.program.id
+    }
+  }, [_vm._v(_vm._s(_vm.service.program.name))]), _vm._v(" >\n        " + _vm._s(_vm.service.name) + "\n    ")]), _vm._v(" "), _c('h1', {
     staticClass: "title has-text-centered"
   }, [_vm._v(_vm._s(_vm.service.name))]), _vm._v(" "), _c('div', {
     staticClass: "level"
@@ -32656,9 +32771,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "level-item has-text-centered"
   }, [_c('div', [_c('h2', {
     staticClass: "title is-1"
+  }, [_vm._v(_vm._s(_vm.service.channel_volumes.total_applications))]), _vm._v(" "), _c('p', {
+    staticClass: "heading"
+  }, [_vm._v("Applications")])])]), _vm._v(" "), _c('div', {
+    staticClass: "level-item has-text-centered"
+  }, [_c('div', [_c('h2', {
+    staticClass: "title is-1"
   }, [_vm._v(_vm._s(_vm.service.channel_volumes.total_outputs))]), _vm._v(" "), _c('p', {
     staticClass: "heading"
-  }, [_vm._v("Transactions")])])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("Outputs")])])]), _vm._v(" "), _c('div', {
     staticClass: "level-item has-text-centered"
   }, [_c('div', [_c('h2', {
     staticClass: "title is-1"
@@ -32672,7 +32793,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "column"
   }, [_c('dl', {
     staticClass: "service-details"
-  }, [_c('dt', [_vm._v("Service Owner")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.department.name))]), _vm._v(" "), _c('dt', [_vm._v("Program Name")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.program.name))]), _vm._v(" "), _c('dt', [_vm._v("Responsibility Area")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.responsibility_area.name))]), _vm._v(" "), _c('dt', [_vm._v("Authority")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.authority))])])]), _vm._v(" "), _c('div', {
+  }, [_c('dt', [_vm._v("Service Owner")]), _vm._v(" "), _c('dd', [_c('a', {
+    attrs: {
+      "href": '/departments/' + _vm.service.department.id
+    }
+  }, [_vm._v(_vm._s(_vm.service.department.name))])]), _vm._v(" "), _c('dt', [_vm._v("Program Name")]), _vm._v(" "), _c('dd', [_c('a', {
+    attrs: {
+      "href": '/programs/' + _vm.service.program.id
+    }
+  }, [_vm._v(_vm._s(_vm.service.program.name))])]), _vm._v(" "), _c('dt', [_vm._v("Responsibility Area")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.responsibility_area.name))]), _vm._v(" "), _c('dt', [_vm._v("Authority")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.authority))])])]), _vm._v(" "), _c('div', {
     staticClass: "column"
   }, [_c('dl', {
     staticClass: "service-details"
@@ -32684,7 +32813,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "service-details"
   }, [_c('dt', [_vm._v("Service Standards")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.service_standards))]), _vm._v(" "), _c('dt', [_vm._v("Performance Targets")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.performance_targets))]), _vm._v(" "), _c('dt', [_vm._v("User Fee")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.user_fee))])])])]), _vm._v(" "), _c('h2', {
     staticClass: "title is-2"
-  }, [_vm._v("Transaction Volume")]), _vm._v(" "), _c('table', {
+  }, [_vm._v("Transaction Volume by Channel")]), _vm._v(" "), _c('table', {
     staticClass: "table"
   }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.service.channel_volumes.channels), function(channel) {
     return _c('tr', [_c('td', [_vm._v(_vm._s(channel.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.percent_complete) + "%")])])
@@ -32715,11 +32844,39 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "container"
-  }, [_c('h1', {
+  return (_vm.program) ? _c('div', [_c('div', {
+    staticClass: "breadcrumbs"
+  }, [_c('a', {
+    attrs: {
+      "href": "/"
+    }
+  }, [_vm._v("Home")]), _vm._v(" >\n        "), _c('a', {
+    attrs: {
+      "href": '/departments/' + _vm.program.department.id
+    }
+  }, [_vm._v(_vm._s(_vm.program.department.name))]), _vm._v(" >\n        " + _vm._s(_vm.program.name) + "\n    ")]), _vm._v(" "), _c('h1', {
     staticClass: "title has-text-centered"
-  }, [_vm._v(_vm._s(_vm.program.name))]), _vm._v(" "), _c('h2', {
+  }, [_vm._v(_vm._s(_vm.program.name))]), _vm._v(" "), _c('div', {
+    staticClass: "level"
+  }, [_c('div', {
+    staticClass: "level-item has-text-centered"
+  }, [_c('div', [_c('h2', {
+    staticClass: "title is-1"
+  }, [_vm._v(_vm._s(_vm.program.channel_volumes.total_applications))]), _vm._v(" "), _c('p', {
+    staticClass: "heading"
+  }, [_vm._v("Applications")])])]), _vm._v(" "), _c('div', {
+    staticClass: "level-item has-text-centered"
+  }, [_c('div', [_c('h2', {
+    staticClass: "title is-1"
+  }, [_vm._v(_vm._s(_vm.program.channel_volumes.total_outputs))]), _vm._v(" "), _c('p', {
+    staticClass: "heading"
+  }, [_vm._v("Outputs")])])]), _vm._v(" "), _c('div', {
+    staticClass: "level-item has-text-centered"
+  }, [_c('div', [_c('h2', {
+    staticClass: "title is-1"
+  }, [_vm._v(_vm._s(_vm.program.channel_volumes.percent_complete) + "%")]), _vm._v(" "), _c('p', {
+    staticClass: "heading"
+  }, [_vm._v("Completion Rate")])])])]), _vm._v(" "), _c('h2', {
     staticClass: "title is-3"
   }, [_vm._v("Service Volume by Service")]), _vm._v(" "), _c('table', {
     staticClass: "table"
@@ -32731,7 +32888,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_vm._v(_vm._s(service.name))])]), _vm._v(" "), _vm._l((service.channel_volumes.channels), function(channel) {
       return _c('td', [_vm._v(_vm._s(channel.applications))])
     })], 2)
-  })], 2)])
+  })], 2)]) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Service")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
 }]}
@@ -42902,6 +43059,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -42959,11 +43121,11 @@ module.exports = Component.exports
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "container"
-  }, [_c('h2', {
+  }, [_vm._m(0), _vm._v(" "), _c('h2', {
     staticClass: "subtitle is-2"
   }, [_vm._v("Service Volume by Department")]), _vm._v(" "), _c('table', {
     staticClass: "table"
-  }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.departments), function(department) {
+  }, [_vm._m(1), _vm._v(" "), _vm._l((_vm.departments), function(department) {
     return _c('tr', [_c('td', [_c('a', {
       attrs: {
         "href": '/departments/' + department.id
@@ -42975,14 +43137,26 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "subtitle is-2"
   }, [_vm._v("Completion Rates")]), _vm._v(" "), _c('table', {
     staticClass: "table"
-  }, [_vm._m(1), _vm._v(" "), _vm._l((_vm.departments), function(department) {
+  }, [_vm._m(2), _vm._v(" "), _vm._l((_vm.departments), function(department) {
     return _c('tr', [_c('td', [_c('a', {
       attrs: {
         "href": '/departments/' + department.id
       }
-    }, [_vm._v(_vm._s(department.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.total_applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.total_outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.percent_complete) + "%")])])
+    }, [_vm._v(_vm._s(department.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.total_applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.total_outputs))]), _vm._v(" "), _c('td', [_c('span', {
+      class: {
+        'is-danger': department.channel_volumes.percent_complete > 100
+      }
+    }, [_vm._v(_vm._s(department.channel_volumes.percent_complete) + "%")])])])
   })], 2)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "breadcrumbs"
+  }, [_c('a', {
+    attrs: {
+      "href": "/"
+    }
+  }, [_vm._v("Home")]), _vm._v(" >\n        Departments\n    ")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Department Name")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Department Name")]), _vm._v(" "), _c('th', [_vm._v("Applications")]), _vm._v(" "), _c('th', [_vm._v("Outputs")]), _vm._v(" "), _c('th', [_vm._v("Percent Complete")])])

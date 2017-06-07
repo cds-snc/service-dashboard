@@ -5,8 +5,20 @@
 }
 
 .header {
-  border-top: 8px solid #0a6ebd;
+  border-top: 5px solid #0a6ebd;
   background-color: #ddd !important;
   border-bottom: 1px solid #eee;
-  margin-bottom: 20px;
+  .nav {
+    border-top: 3px solid #0c7cd5;
+  }
+}
+
+.breadcrumbs {
+  margin: 5px 0 40px -50px;
+  font-size: .8em;
+}
+
+span.is-danger {
+  background-color: #ff3860;
+  padding: 5px;
 }

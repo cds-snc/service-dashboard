@@ -1,5 +1,10 @@
 <template>
     <div class="container">
+        <div class="breadcrumbs">
+            <a href="/">Home</a> >
+            Departments
+        </div>
+
         <h2 class="subtitle is-2">Service Volume by Department</h2>
 
         <table class="table">
@@ -29,7 +34,7 @@
                 <td><a :href="'/departments/' + department.id">{{ department.name }}</a></td>
                 <td>{{ department.channel_volumes.total_applications }}</td>
                 <td>{{ department.channel_volumes.total_outputs }}</td>
-                <td>{{ department.channel_volumes.percent_complete }}%</td>
+                <td><span :class="{ 'is-danger' : department.channel_volumes.percent_complete > 100 }">{{ department.channel_volumes.percent_complete }}%</span></td>
             </tr>
         </table>
     </div>
