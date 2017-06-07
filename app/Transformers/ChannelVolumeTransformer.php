@@ -16,8 +16,8 @@ class ChannelVolumeTransformer extends AbstractTransformer
         $output = [
             'id' => $item->channel->id,
             'name' => $item->channel->name,
-            'applications' => is_null($item->applications) ? -1 : $item->applications,
-            'outputs' => is_null($item->outputs) ? -1 : $item->outputs,
+            'applications' => is_null($item->applications) ? 'n/a' : $item->applications,
+            'outputs' => is_null($item->outputs) ? 'n/a' : $item->outputs,
             'percent_complete' => $percent_complete
         ];
 

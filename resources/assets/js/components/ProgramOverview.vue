@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <dashboard-header :title="program.name"></dashboard-header>
+        <h1 class="title has-text-centered">{{ program.name }}</h1>
 
         <h2 class="title is-3">Service Volume by Service</h2>
 

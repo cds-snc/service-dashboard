@@ -1,6 +1,6 @@
 <template>
     <div class="container" v-if="service">
-        <dashboard-header :title="service.name"></dashboard-header>
+        <h1 class="title has-text-centered">{{ service.name }}</h1>
 
         <div class="level">
             <div class="level-item has-text-centered">

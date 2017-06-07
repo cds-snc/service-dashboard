@@ -1916,8 +1916,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -32360,11 +32358,9 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "container"
-  }, [_c('dashboard-header', {
-    attrs: {
-      "title": _vm.department.name
-    }
-  }), _vm._v(" "), _c('h2', {
+  }, [_c('h1', {
+    staticClass: "title has-text-centered"
+  }, [_vm._v(_vm._s(_vm.department.name))]), _vm._v(" "), _c('h2', {
     staticClass: "title is-3"
   }, [_vm._v("Service Volume by Program")]), _vm._v(" "), _c('table', {
     staticClass: "table"
@@ -32376,7 +32372,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_vm._v(_vm._s(program.name))])]), _vm._v(" "), _vm._l((program.channel_volumes.channels), function(channel) {
       return _c('td', [_vm._v(_vm._s(channel.applications))])
     })], 2)
-  })], 2)], 1)
+  })], 2)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Program")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
 }]}
@@ -32393,20 +32389,14 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "container"
-  }, [_c('dashboard-header', {
-    attrs: {
-      "title": 'Services'
-    }
-  }), _vm._v(" "), _c('div', {
+  return _c('div', [_c('div', {
     staticClass: "field"
   }, [_c('label', {
-    staticClass: "sr-only",
+    staticClass: "title",
     attrs: {
       "for": "filter"
     }
-  }, [_vm._v("Filter")]), _vm._v(" "), _c('input', {
+  }, [_vm._v("Search Services")]), _vm._v(" "), _c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -32632,7 +32622,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_vm._v(_vm._s(service.name))])])])
   })], 2) : _c('div', {
     staticClass: "notification"
-  }, [_vm._v("\n        No Services Found\n    ")])], 1)
+  }, [_vm._v("\n        No Services Found\n    ")])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Department")]), _vm._v(" "), _c('th', [_vm._v("Program")]), _vm._v(" "), _c('th', [_vm._v("Service Name")])])
 }]}
@@ -32651,11 +32641,9 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return (_vm.service) ? _c('div', {
     staticClass: "container"
-  }, [_c('dashboard-header', {
-    attrs: {
-      "title": _vm.service.name
-    }
-  }), _vm._v(" "), _c('div', {
+  }, [_c('h1', {
+    staticClass: "title has-text-centered"
+  }, [_vm._v(_vm._s(_vm.service.name))]), _vm._v(" "), _c('div', {
     staticClass: "level"
   }, [_c('div', {
     staticClass: "level-item has-text-centered"
@@ -32703,7 +32691,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('strong', [_vm._v(_vm._s(eservice.name))]), _c('br'), _vm._v("\n            " + _vm._s(eservice.enabled) + "\n        ")])
   }), _vm._v(" "), _c('div', {
     staticClass: "column has-text-centered"
-  }, [_c('strong', [_vm._v("Estimated % of the service completed online")]), _c('br'), _vm._v("\n            " + _vm._s(_vm.service.e_services.score) + "\n        ")])], 2)], 1) : _vm._e()
+  }, [_c('strong', [_vm._v("Estimated % of the service completed online")]), _c('br'), _vm._v("\n            " + _vm._s(_vm.service.e_services.score) + "\n        ")])], 2)]) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Channel")]), _vm._v(" "), _c('th', [_vm._v("Applications")]), _vm._v(" "), _c('th', [_vm._v("Outputs")]), _vm._v(" "), _c('th', [_vm._v("Percent Complete")])])
 }]}
@@ -32722,11 +32710,9 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "container"
-  }, [_c('dashboard-header', {
-    attrs: {
-      "title": _vm.program.name
-    }
-  }), _vm._v(" "), _c('h2', {
+  }, [_c('h1', {
+    staticClass: "title has-text-centered"
+  }, [_vm._v(_vm._s(_vm.program.name))]), _vm._v(" "), _c('h2', {
     staticClass: "title is-3"
   }, [_vm._v("Service Volume by Service")]), _vm._v(" "), _c('table', {
     staticClass: "table"
@@ -32738,7 +32724,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_vm._v(_vm._s(service.name))])]), _vm._v(" "), _vm._l((service.channel_volumes.channels), function(channel) {
       return _c('td', [_vm._v(_vm._s(channel.applications))])
     })], 2)
-  })], 2)], 1)
+  })], 2)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Service")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
 }]}
@@ -42824,9 +42810,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['title']
@@ -42837,11 +42820,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._m(0), _vm._v(" "), _c('h1', {
-    staticClass: "title has-text-centered"
-  }, [_vm._v(_vm._s(_vm.title))])])
+  return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('nav', {
+  return _c('div', [_c('nav', {
     staticClass: "nav"
   }, [_c('div', {
     staticClass: "nav-left"
@@ -42866,7 +42847,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": "/departments"
     }
-  }, [_vm._v("Departments")])])])
+  }, [_vm._v("Departments")])])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -42882,8 +42863,6 @@ if (false) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
 //
 //
 //
@@ -42978,11 +42957,7 @@ module.exports = Component.exports
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "container"
-  }, [_c('dashboard-header', {
-    attrs: {
-      "title": 'Departments'
-    }
-  }), _vm._v(" "), _c('h2', {
+  }, [_c('h2', {
     staticClass: "subtitle is-2"
   }, [_vm._v("Service Volume by Department")]), _vm._v(" "), _c('table', {
     staticClass: "table"
@@ -43004,7 +42979,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "href": '/departments/' + department.id
       }
     }, [_vm._v(_vm._s(department.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.total_applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.total_outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.percent_complete))])])
-  })], 2)], 1)
+  })], 2)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Department Name")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

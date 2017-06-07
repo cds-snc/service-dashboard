@@ -12,9 +12,6 @@
                 <a href="/departments" class="nav-item">Departments</a>
             </div>
         </nav>
-
-        <h1 class="title has-text-centered">{{ title }}</h1>
-
     </div>
 </template>
 

@@ -1,7 +1,5 @@
 <template>
     <div class="container">
-        <dashboard-header :title="'Departments'"></dashboard-header>
-
         <h2 class="subtitle is-2">Service Volume by Department</h2>
 
         <table class="table">

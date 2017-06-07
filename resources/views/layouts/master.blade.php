@@ -23,6 +23,7 @@
 </head>
 <body>
 <div id="app">
+    <dashboard-header></dashboard-header>
     <div class="container">
         @yield('content')
     </div>
