@@ -58,15 +58,15 @@ class Service extends Model
         return $this->hasMany(ChannelVolume::class);
     }
 
-    public function getOrientationAttribute($value)
+    public function getOrientationAttribute()
     {
-        if ($value == 1) {
+        if ($this->service_orientation == 1) {
             return 'External';
         }
-        if ($value == 2) {
+        if ($this->service_orientation == 2) {
             return 'Internal';
         }
-        if ($value == 3) {
+        if ($this->service_orientation == 3) {
             return 'Internal/External';
         }
         return 'N/A';

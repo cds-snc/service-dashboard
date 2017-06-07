@@ -20,7 +20,7 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        return Service::all();
+        return ServiceTransformer::transform(Service::all());
     }
 
     /**

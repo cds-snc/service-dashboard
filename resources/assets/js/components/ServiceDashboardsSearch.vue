@@ -13,8 +13,8 @@
                         <span class="select">
                             <select v-model="orientation" id="orientation" name="orientation">
                                 <option value="any">Any</option>
-                                <option value="1">External</option>
-                                <option value="2">Internal</option>
+                                <option value="External">External</option>
+                                <option value="Internal">Internal</option>
                             </select>
                         </span>
                     </p>
@@ -29,8 +29,8 @@
                         <span class="select">
                             <select v-model="agreements" id="service_agreements" name="agreements">
                                 <option value="any" selected>Any</option>
-                                <option value="1">Yes</option>
-                                <option value="0">No</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
                             </select>
                         </span>
                     </p>
@@ -68,16 +68,20 @@
             </div>
         </div>
 
-        <table v-if="filteredServices.length" class="table is-striped services">
+        <table v-if="filteredServices.length" class="table is-striped is-bordered services">
             <tr>
                 <th>Department</th>
                 <th>Program</th>
                 <th>Service Name</th>
+                <th>Applications/Outputs</th>
+                <th>Completion Rate</th>
             </tr>
             <tr v-for="service in filteredServices">
                 <td><a :href="'/departments/' + service.department.id">{{ service.department.name }}</a></td>
                 <td><a :href="'/programs/' + service.program.id">{{ service.program.name }}</a></td>
                 <td><a :href="'/services/' + service.id">{{ service.name }}</a></td>
+                <td>{{ service.channel_volumes.total_applications }}/{{ service.channel_volumes.total_outputs }}</td>
+                <td>{{ service.channel_volumes.percent_complete }}%</td>
             </tr>
         </table>
         <div v-else class="notification">
@@ -133,13 +137,17 @@
                     if (this.selected_type == 'any') {
                         return true;
                     }
-                    return service.service_type_id == this.selected_type;
+                    if (service.service_type) {
+                        return service.service_type.id == this.selected_type;
+                    }
                 }).filter(service => {
                     if (this.selected_designation == 'any') {
                         return true;
                     }
                     if (this.selected_designation.name == 'None') {
-                        return service.special_designations.length == 0;
+                        if (service.special_designations) {
+                            return service.special_designations.length == 0;
+                        }
                     }
                     return _.find(service.special_designations, { 'id': this.selected_designation.id });
                 });

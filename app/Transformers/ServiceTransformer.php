@@ -43,7 +43,7 @@ class ServiceTransformer extends AbstractTransformer
         }
 
         if ($this->isRelationshipLoaded($service, 'specialDesignations')) {
-            if ($service->specialDesignations->count()) {
+            if ($service->specialDesignations) {
                 $output['special_designations'] = SpecialDesignationTransformer::transform($service->specialDesignations);
             }
         }
