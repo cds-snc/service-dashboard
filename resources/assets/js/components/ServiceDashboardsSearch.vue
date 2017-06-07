@@ -108,7 +108,6 @@
         mounted() {
             axios.get('/api/services').then(response => {
                 this.services = response.data;
-                console.log(this.services);
             });
             axios.get('/api/service_types').then(response => {
                 this.service_types = response.data;

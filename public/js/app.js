@@ -1939,7 +1939,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         axios.get('/api/services').then(function (response) {
             _this.services = response.data;
-            console.log(_this.services);
         });
         axios.get('/api/service_types').then(function (response) {
             _this.service_types = response.data;
