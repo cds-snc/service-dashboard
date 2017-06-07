@@ -32392,7 +32392,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', [_c('div', {
     staticClass: "field"
   }, [_c('label', {
-    staticClass: "title",
+    staticClass: "subtitle",
     attrs: {
       "for": "filter"
     }
@@ -42822,7 +42822,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('nav', {
+  return _c('div', {
+    staticClass: "header"
+  }, [_c('nav', {
     staticClass: "nav"
   }, [_c('div', {
     staticClass: "nav-left"
@@ -42978,7 +42980,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       attrs: {
         "href": '/departments/' + department.id
       }
-    }, [_vm._v(_vm._s(department.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.total_applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.total_outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.percent_complete))])])
+    }, [_vm._v(_vm._s(department.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.total_applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.total_outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(department.channel_volumes.percent_complete) + "%")])])
   })], 2)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Department Name")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
