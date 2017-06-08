@@ -21,7 +21,6 @@ class DepartmentCompletionRateTransformer
     }
 
     public function transformModel(Model $department) {
-
         $total_applications = $department->channelVolumes->pluck('applications')->sum();
         $total_outputs = $department->channelVolumes->pluck('outputs')->sum();
 

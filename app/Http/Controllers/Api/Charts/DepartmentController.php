@@ -34,6 +34,10 @@ class DepartmentController extends Controller
 
         $data = DepartmentCompletionRateTransformer::transform($department);
 
+        $data = array_sort($data, function($value) {
+            return $value['completion'];
+        });
+
         Excel::create('department_completion', function ($excel) use ($data) {
             $excel->sheet('data', function ($sheet) use ($data) {
                 $sheet->fromArray($data);
