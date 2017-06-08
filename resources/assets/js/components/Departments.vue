@@ -5,9 +5,18 @@
             Departments
         </div>
 
+        <div class="toggle-charts">
+            <a v-on:click="toggleCharts" :class="['button', show_charts ? 'is-danger' : 'is-primary']">
+                <span class="icon">
+                    <i class="fa fa-bar-chart"></i>
+                </span>
+                <span>{{ show_charts ? 'Hide Charts' : 'Show Charts' }}</span>
+            </a>
+        </div>
+
         <h2 class="subtitle is-2">Service Volume by Department</h2>
 
-        <service-volume-by-department></service-volume-by-department>
+        <service-volume-by-department v-if="show_charts"></service-volume-by-department>
 
         <table class="table">
             <tr>
@@ -24,6 +33,8 @@
         </table>
 
         <h2 class="subtitle is-2">Completion Rates</h2>
+
+        <completion-rate-by-department v-if="show_charts"></completion-rate-by-department>
 
         <table class="table">
             <tr>
@@ -46,13 +57,20 @@
     export default {
         data() {
             return {
-                departments: []
+                departments: null,
+                show_charts: false
             }
         },
         mounted() {
             axios.get('/api/departments/').then(response => {
                 this.departments = response.data;
             });
+        },
+        methods: {
+            toggleCharts: function() {
+                console.log("hzzah");
+                this.show_charts = !this.show_charts;
+            }
         }
     }
 </script>

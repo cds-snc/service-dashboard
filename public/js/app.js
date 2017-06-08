@@ -853,6 +853,7 @@ Vue.component('program-overview', __webpack_require__(43));
 
 // Charts
 Vue.component('service-volume-by-department', __webpack_require__(68));
+Vue.component('completion-rate-by-department', __webpack_require__(70));
 
 var app = new Vue({
   el: '#app'
@@ -43097,11 +43098,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            departments: []
+            departments: null,
+            show_charts: false
         };
     },
     mounted: function mounted() {
@@ -43110,6 +43123,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         axios.get('/api/departments/').then(function (response) {
             _this.departments = response.data;
         });
+    },
+
+    methods: {
+        toggleCharts: function toggleCharts() {
+            console.log("hzzah");
+            this.show_charts = !this.show_charts;
+        }
     }
 });
 
@@ -43154,11 +43174,18 @@ module.exports = Component.exports
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "container"
-  }, [_vm._m(0), _vm._v(" "), _c('h2', {
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "toggle-charts"
+  }, [_c('a', {
+    class: ['button', _vm.show_charts ? 'is-danger' : 'is-primary'],
+    on: {
+      "click": _vm.toggleCharts
+    }
+  }, [_vm._m(1), _vm._v(" "), _c('span', [_vm._v(_vm._s(_vm.show_charts ? 'Hide Charts' : 'Show Charts'))])])]), _vm._v(" "), _c('h2', {
     staticClass: "subtitle is-2"
-  }, [_vm._v("Service Volume by Department")]), _vm._v(" "), _c('service-volume-by-department'), _vm._v(" "), _c('table', {
+  }, [_vm._v("Service Volume by Department")]), _vm._v(" "), (_vm.show_charts) ? _c('service-volume-by-department') : _vm._e(), _vm._v(" "), _c('table', {
     staticClass: "table"
-  }, [_vm._m(1), _vm._v(" "), _vm._l((_vm.departments), function(department) {
+  }, [_vm._m(2), _vm._v(" "), _vm._l((_vm.departments), function(department) {
     return _c('tr', [_c('td', [_c('a', {
       attrs: {
         "href": '/departments/' + department.id
@@ -43168,9 +43195,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     })], 2)
   })], 2), _vm._v(" "), _c('h2', {
     staticClass: "subtitle is-2"
-  }, [_vm._v("Completion Rates")]), _vm._v(" "), _c('table', {
+  }, [_vm._v("Completion Rates")]), _vm._v(" "), (_vm.show_charts) ? _c('completion-rate-by-department') : _vm._e(), _vm._v(" "), _c('table', {
     staticClass: "table"
-  }, [_vm._m(2), _vm._v(" "), _vm._l((_vm.departments), function(department) {
+  }, [_vm._m(3), _vm._v(" "), _vm._l((_vm.departments), function(department) {
     return _c('tr', [_c('td', [_c('a', {
       attrs: {
         "href": '/departments/' + department.id
@@ -43189,6 +43216,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "href": "/"
     }
   }, [_vm._v("Home")]), _vm._v(" >\n        Departments\n    ")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('span', {
+    staticClass: "icon"
+  }, [_c('i', {
+    staticClass: "fa fa-bar-chart"
+  })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Department Name")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -43210,8 +43243,6 @@ if (false) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_d3__);
-//
-//
 //
 //
 //
@@ -60222,13 +60253,186 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "department-service-volume"
     }
-  }, [_vm._v("\n    This is a chart\n")])
+  })
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
      require("vue-hot-reload-api").rerender("data-v-a517b4dc", module.exports)
+  }
+}
+
+/***/ }),
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(71),
+  /* template */
+  __webpack_require__(72),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/samojled/Code/service-dashboard/resources/assets/js/components/graphs/CompletionRateByDepartment.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] CompletionRateByDepartment.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-09c7283b", Component.options)
+  } else {
+    hotAPI.reload("data-v-09c7283b", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 71 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_d3__);
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            csv: null
+        };
+    },
+    mounted: function mounted() {
+        var app = this;
+
+        __WEBPACK_IMPORTED_MODULE_0_d3__["csv"]('/api/charts/departments/completion', function (error, data) {
+            app.render(data, '#departments-completion');
+        });
+    },
+
+    methods: {
+        render: function render(dataSet, containerSelector) {
+            // Set if  multi-circle
+            var multiCircle = dataSet.length > 1 ? true : false;
+
+            // Define svg size
+            if (multiCircle) var width = 900,
+                height = 900;else var width = 325,
+                height = 325;
+
+            // Init Graphed Arc
+            var arc = __WEBPACK_IMPORTED_MODULE_0_d3__["arc"]();
+
+            // Init completed Arc
+            var completedArc = __WEBPACK_IMPORTED_MODULE_0_d3__["arc"]();
+
+            // Settings
+            var PI = Math.PI,
+                arcMin = 125,
+                arcWidth = 25,
+                arcPad = 2,
+                colors = __WEBPACK_IMPORTED_MODULE_0_d3__["schemeCategory20"];
+
+            // Define and Setup SVG the canvas
+            var svg = __WEBPACK_IMPORTED_MODULE_0_d3__["select"](containerSelector).append("svg").attr("width", width).attr("height", height).attr("class", "circleGraph").append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+            // Setup arc
+            arc.innerRadius(function (d, i) {
+                return arcMin + i * arcWidth + arcPad;
+            }).outerRadius(function (d, i) {
+                return arcMin + (i + 1) * arcWidth;
+            }).startAngle(0 * (PI / 180)).endAngle(function (d, i) {
+                return d.completion / 100 * 2 * Math.PI;
+            });
+
+            // If not multiCircle, draw completed arc
+            if (!multiCircle) {
+
+                // Setup competed Arc
+                completedArc.innerRadius(function () {
+                    return arcMin + 0 * arcWidth + arcPad;
+                }).outerRadius(function () {
+                    return arcMin + (0 + 1) * arcWidth;
+                }).startAngle(0 * (PI / 180)).endAngle(function () {
+                    return 2 * Math.PI;
+                });
+
+                // Draw Complete Arc
+                svg.append("path").attr("fill", "#CCC").attr("d", completedArc);
+            }
+
+            // Bind Data to arc
+            var arcs = svg.selectAll(".arcVis").data(dataSet);
+
+            arcs.enter().append("svg:g:path").attr("class", "arcVis").attr("fill", function (d, i) {
+                return colors[i];
+            }).attr("d", arc).attr("style", "transition: 0.5s all ease").attr("data-name", function (d) {
+                return d.name;
+            }).attr("data-val", function (d) {
+                return d.completion + "%";
+            });
+
+            if (multiCircle) {
+                svg.append("g").attr("transform", "translate(0, 0)").append("foreignObject").attr("class", "circlePercent").attr("x", -82).attr("y", -55).attr("width", 170).attr("height", 110);
+            } else {
+                svg.append("g").attr("transform", "translate(0, 0)").append("foreignObject").attr("class", "circlePercent").attr("x", -82).attr("y", -55).attr("width", 170).attr("height", 110).html("<div class=\"percentText\">" + dataSet[0].completion + "%</div><div class=\"percentLable\">Completion Rate</div>");
+            }
+
+            if (multiCircle) {
+                __WEBPACK_IMPORTED_MODULE_0_d3__["selectAll"](".arcVis").on("mouseover", function () {
+
+                    var target = __WEBPACK_IMPORTED_MODULE_0_d3__["select"](this);
+
+                    target.attr("opacity", "0.65");
+
+                    var deptName = target.attr("data-name");
+                    var deptVal = target.attr("data-val");
+                    var container = containerSelector + " .circlePercent";
+
+                    __WEBPACK_IMPORTED_MODULE_0_d3__["selectAll"](containerSelector).select(".circlePercent").html("<div class=\"percentText\">" + deptVal + "</div>" + "<div class=\"percentLable small\">" + deptName + "</div>");
+                });
+
+                __WEBPACK_IMPORTED_MODULE_0_d3__["selectAll"](".arcVis").on("mouseout", function () {
+                    __WEBPACK_IMPORTED_MODULE_0_d3__["select"](this).attr("opacity", "1");
+                    __WEBPACK_IMPORTED_MODULE_0_d3__["select"](".circlePercent").html('');
+                });
+            }
+        }
+    }
+});
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "departments-completion"
+    }
+  })
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-09c7283b", module.exports)
   }
 }
 

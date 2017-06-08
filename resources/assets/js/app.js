@@ -26,6 +26,7 @@ Vue.component('program-overview', require('./components/ProgramOverview.vue'));
 
 // Charts
 Vue.component('service-volume-by-department', require('./components/graphs/ServiceVolumeByDepartment.vue'));
+Vue.component('completion-rate-by-department', require('./components/graphs/CompletionRateByDepartment.vue'));
 
 const app = new Vue({
     el: '#app'

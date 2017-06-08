@@ -42,3 +42,4 @@ Route::get('services/{service}/volumes', 'Api\ServiceVolumeController@index');
 
 
 Route::get('/charts/departments/service_volume', 'Api\ChartsController@departmentServiceVolume');
+Route::get('/charts/departments/completion', 'Api\ChartsController@departmentCompletion');

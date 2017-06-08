@@ -1,7 +1,5 @@
 <template>
-    <div id="department-service-volume">
-        This is a chart
-    </div>
+    <div id="department-service-volume"></div>
 </template>
 
 <script>

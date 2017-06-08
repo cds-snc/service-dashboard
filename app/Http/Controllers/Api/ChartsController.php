@@ -36,4 +36,24 @@ class ChartsController extends Controller
             });
         })->export('csv');
     }
+
+    public function departmentCompletion()
+    {
+        $departments = DepartmentTransformer::transform(Department::all());
+
+        $data = collect();
+
+        foreach ($departments as $department) {
+            $data->push([
+                'name' => $department['name'],
+                'completion' => $department['channel_volumes']['percent_complete']
+            ]);
+        }
+
+        Excel::create('department_completion', function ($excel) use ($data) {
+            $excel->sheet('data', function ($sheet) use ($data) {
+                $sheet->fromArray($data->sortBy('completion')->toArray());
+            });
+        })->export('csv');
+    }
 }
