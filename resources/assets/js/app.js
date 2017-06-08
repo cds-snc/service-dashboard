@@ -15,8 +15,6 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
-
 Vue.component('dashboard-header', require('./components/DashboardHeader.vue'));
 Vue.component('departments', require('./components/Departments.vue'));
 Vue.component('service-dashboard-search', require('./components/ServiceDashboardsSearch.vue'));
