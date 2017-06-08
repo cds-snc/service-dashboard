@@ -1,21 +1,17 @@
 <template>
-    <div id="departments-completion"></div>
+    <div id="completion-rate"></div>
 </template>
 
 <script>
     import * as d3 from "d3";
 
     export default {
-        data() {
-            return {
-                csv: null
-            }
-        },
+        props: ['csv'],
         mounted() {
             var app = this;
 
-            d3.csv('/api/charts/departments/completion', function(error, data) {
-                app.render(data, '#departments-completion');
+            d3.csv(this.csv, function(error, data) {
+                app.render(data, '#completion-rate');
             });
         },
         methods: {

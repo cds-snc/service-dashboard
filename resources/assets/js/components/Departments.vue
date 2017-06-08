@@ -16,7 +16,7 @@
 
         <h2 class="subtitle is-2">Service Volume by Department</h2>
 
-        <service-volume-by-department v-if="show_charts"></service-volume-by-department>
+        <service-volume :csv="'/api/charts/departments/service_volume'" v-if="show_charts"></service-volume>
 
         <table class="table">
             <tr>
@@ -34,7 +34,7 @@
 
         <h2 class="subtitle is-2">Completion Rates</h2>
 
-        <completion-rate-by-department v-if="show_charts"></completion-rate-by-department>
+        <completion-rate :csv="'/api/charts/departments/completion'" v-if="show_charts"></completion-rate>
 
         <table class="table">
             <tr>
