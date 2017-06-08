@@ -39,3 +39,6 @@ Route::get('service_types', 'Api\ServiceTypeController@index');
 Route::get('special_designations', 'Api\SpecialDesignationController@index');
 
 Route::get('services/{service}/volumes', 'Api\ServiceVolumeController@index');
+
+
+Route::get('/charts/departments/service_volume', 'Api\ChartsController@departmentServiceVolume');

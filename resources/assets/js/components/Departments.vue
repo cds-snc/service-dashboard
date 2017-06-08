@@ -7,6 +7,8 @@
 
         <h2 class="subtitle is-2">Service Volume by Department</h2>
 
+        <service-volume-by-department></service-volume-by-department>
+
         <table class="table">
             <tr>
                 <th>Department Name</th>
