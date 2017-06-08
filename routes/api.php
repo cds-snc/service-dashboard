@@ -41,5 +41,8 @@ Route::get('special_designations', 'Api\SpecialDesignationController@index');
 Route::get('services/{service}/volumes', 'Api\ServiceVolumeController@index');
 
 
-Route::get('/charts/departments/service_volume', 'Api\ChartsController@departmentServiceVolume');
-Route::get('/charts/departments/completion', 'Api\ChartsController@departmentCompletion');
+Route::get('/charts/departments/completion', 'Api\Charts\DepartmentController@completion');
+Route::get('/charts/departments/{department}/completion', 'Api\Charts\DepartmentController@completion');
+
+Route::get('/charts/departments/service_volume', 'Api\Charts\DepartmentController@serviceVolume');
+Route::get('/charts/departments/{department}/service_volume', 'Api\Charts\DepartmentController@serviceVolume');
