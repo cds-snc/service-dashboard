@@ -68,7 +68,6 @@
         },
         methods: {
             toggleCharts: function() {
-                console.log("hzzah");
                 this.show_charts = !this.show_charts;
             }
         }

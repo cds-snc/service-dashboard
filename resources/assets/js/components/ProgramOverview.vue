@@ -57,7 +57,7 @@
             </tr>
             <tr v-for="service in program.services">
                 <td><a :href="'/services/' + service.id">{{ service.name }}</a></td>
-                <td v-for="channel in service.channel_volumes.channels">{{ channel.applications }}</td>
+                <td v-for="channel in service.channel_volumes.channels">{{ channel.outputs }}</td>
             </tr>
         </table>
     </div>

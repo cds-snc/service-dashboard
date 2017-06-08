@@ -1758,12 +1758,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['id'],
     data: function data() {
         return {
-            department: null
+            department: null,
+            show_charts: false
         };
     },
     mounted: function mounted() {
@@ -1772,6 +1784,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         axios.get('/api/departments/' + this.id + '?include=programs').then(function (response) {
             _this.department = response.data;
         });
+    },
+
+    methods: {
+        toggleCharts: function toggleCharts() {
+            this.show_charts = !this.show_charts;
+        }
     }
 });
 
@@ -32369,7 +32387,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": "/"
     }
-  }, [_vm._v("Home")]), _vm._v(" >\n        " + _vm._s(_vm.department.name) + "\n    ")]), _vm._v(" "), _c('h1', {
+  }, [_vm._v("Home")]), _vm._v(" >\n        " + _vm._s(_vm.department.name) + "\n    ")]), _vm._v(" "), _c('div', {
+    staticClass: "toggle-charts"
+  }, [_c('a', {
+    class: ['button', _vm.show_charts ? 'is-danger' : 'is-primary'],
+    on: {
+      "click": _vm.toggleCharts
+    }
+  }, [_vm._m(0), _vm._v(" "), _c('span', [_vm._v(_vm._s(_vm.show_charts ? 'Hide Charts' : 'Show Charts'))])])]), _vm._v(" "), _c('h1', {
     staticClass: "title has-text-centered"
   }, [_vm._v(_vm._s(_vm.department.name))]), _vm._v(" "), _c('div', {
     staticClass: "level"
@@ -32393,18 +32418,28 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "heading"
   }, [_vm._v("Completion Rate")])])])]), _vm._v(" "), _c('h2', {
     staticClass: "title is-3"
-  }, [_vm._v("Service Volume by Program")]), _vm._v(" "), _c('table', {
+  }, [_vm._v("Service Volume by Program")]), _vm._v(" "), (_vm.show_charts) ? _c('service-volume', {
+    attrs: {
+      "csv": '/api/charts/departments/' + this.id + '/programs/service_volume'
+    }
+  }) : _vm._e(), _vm._v(" "), _c('table', {
     staticClass: "table"
-  }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.department.programs), function(program) {
+  }, [_vm._m(1), _vm._v(" "), _vm._l((_vm.department.programs), function(program) {
     return _c('tr', [_c('td', [_c('a', {
       attrs: {
         "href": '/programs/' + program.id
       }
     }, [_vm._v(_vm._s(program.name))])]), _vm._v(" "), _vm._l((program.channel_volumes.channels), function(channel) {
-      return _c('td', [_vm._v(_vm._s(channel.applications))])
+      return _c('td', [_vm._v(_vm._s(channel.outputs))])
     })], 2)
-  })], 2)]) : _vm._e()
+  })], 2)], 1) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('span', {
+    staticClass: "icon"
+  }, [_c('i', {
+    staticClass: "fa fa-bar-chart"
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Program")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
 }]}
 module.exports.render._withStripped = true
@@ -32821,7 +32856,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "href": '/services/' + service.id
       }
     }, [_vm._v(_vm._s(service.name))])]), _vm._v(" "), _vm._l((service.channel_volumes.channels), function(channel) {
-      return _c('td', [_vm._v(_vm._s(channel.applications))])
+      return _c('td', [_vm._v(_vm._s(channel.outputs))])
     })], 2)
   })], 2)]) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -43036,7 +43071,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     methods: {
         toggleCharts: function toggleCharts() {
-            console.log("hzzah");
             this.show_charts = !this.show_charts;
         }
     }
