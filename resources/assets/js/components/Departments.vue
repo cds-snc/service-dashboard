@@ -18,17 +18,33 @@
 
         <service-volume :csv="'/api/charts/departments/service_volume'" v-if="show_charts"></service-volume>
 
-        <table class="table">
-            <tr>
-                <th>Department Name</th>
-                <th>Online</th>
-                <th>In Person</th>
-                <th>Telephone</th>
-                <th>Mail</th>
-            </tr>
+        <table class="table is-bordered is-striped">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th colspan="2">Online</th>
+                    <th colspan="2">In Person</th>
+                    <th colspan="2">Telephone</th>
+                    <th colspan="2">Mail</th>
+                </tr>
+                <tr>
+                    <th>Department</th>
+                    <th><abbr title="Applications">A</abbr></th>
+                    <th><abbr title="Outputs">O</abbr></th>
+                    <th><abbr title="Applications">A</abbr></th>
+                    <th><abbr title="Outputs">O</abbr></th>
+                    <th><abbr title="Applications">A</abbr></th>
+                    <th><abbr title="Outputs">O</abbr></th>
+                    <th><abbr title="Applications">A</abbr></th>
+                    <th><abbr title="Outputs">O</abbr></th>
+                </tr>
+            </thead>
             <tr v-for="department in departments">
                 <td><a :href="'/departments/' + department.id">{{ department.name }}</a></td>
-                <td v-for="channel in department.channel_volumes.channels">{{ channel.applications }}</td>
+                <template v-for="channel in department.channel_volumes.channels">
+                    <td>{{ channel.applications }}</td>
+                    <td>{{ channel.outputs }}</td>
+                </template>
             </tr>
         </table>
 

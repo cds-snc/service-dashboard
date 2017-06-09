@@ -50,14 +50,15 @@
         <table class="table">
             <tr>
                 <th>Service</th>
-                <th>Online</th>
-                <th>In Person</th>
-                <th>Telephone</th>
-                <th>Mail</th>
+                <th>Applications</th>
+                <th>Outputs</th>
+                <th>Completion Rate</th>
             </tr>
             <tr v-for="service in program.services">
                 <td><a :href="'/services/' + service.id">{{ service.name }}</a></td>
-                <td v-for="channel in service.channel_volumes.channels">{{ channel.outputs }}</td>
+                <td>{{ program.channel_volumes.total_applications }}</td>
+                <td>{{ program.channel_volumes.total_outputs }}</td>
+                <td>{{ program.channel_volumes.percent_complete }}%</td>
             </tr>
         </table>
     </div>

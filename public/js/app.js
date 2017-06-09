@@ -852,6 +852,7 @@ Vue.component('program-overview', __webpack_require__(43));
 // Charts
 Vue.component('service-volume', __webpack_require__(73));
 Vue.component('completion-rate', __webpack_require__(77));
+Vue.component('e-services', __webpack_require__(79));
 
 var app = new Vue({
   el: '#app'
@@ -1769,6 +1770,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['id'],
@@ -1800,6 +1818,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -2059,15 +2078,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -32418,20 +32428,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "heading"
   }, [_vm._v("Completion Rate")])])])]), _vm._v(" "), _c('h2', {
     staticClass: "title is-3"
-  }, [_vm._v("Service Volume by Program")]), _vm._v(" "), (_vm.show_charts) ? _c('service-volume', {
+  }, [_vm._v("Service Volume by Channel")]), _vm._v(" "), _c('table', {
+    staticClass: "table"
+  }, [_vm._m(1), _vm._v(" "), _vm._l((_vm.department.channel_volumes.channels), function(channel) {
+    return _c('tr', [_c('td', [_vm._v(_vm._s(channel.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.percent_complete) + "%")])])
+  })], 2), _vm._v(" "), _c('h2', {
+    staticClass: "title is-3"
+  }, [_vm._v("Programs")]), _vm._v(" "), (_vm.show_charts) ? _c('service-volume', {
     attrs: {
       "csv": '/api/charts/departments/' + this.id + '/programs/service_volume'
     }
   }) : _vm._e(), _vm._v(" "), _c('table', {
     staticClass: "table"
-  }, [_vm._m(1), _vm._v(" "), _vm._l((_vm.department.programs), function(program) {
+  }, [_vm._m(2), _vm._v(" "), _vm._l((_vm.department.programs), function(program) {
     return _c('tr', [_c('td', [_c('a', {
       attrs: {
         "href": '/programs/' + program.id
       }
-    }, [_vm._v(_vm._s(program.name))])]), _vm._v(" "), _vm._l((program.channel_volumes.channels), function(channel) {
-      return _c('td', [_vm._v(_vm._s(channel.outputs))])
-    })], 2)
+    }, [_vm._v(_vm._s(program.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(program.channel_volumes.total_applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(program.channel_volumes.total_outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(program.channel_volumes.percent_complete) + "%")])])
   })], 2)], 1) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('span', {
@@ -32440,7 +32454,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "fa fa-bar-chart"
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('tr', [_c('th', [_vm._v("Program")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
+  return _c('tr', [_c('th', [_vm._v("Channel")]), _vm._v(" "), _c('th', [_vm._v("Applications")]), _vm._v(" "), _c('th', [_vm._v("Outputs")]), _vm._v(" "), _c('th', [_vm._v("Percent Complete")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('tr', [_c('th', [_vm._v("Program")]), _vm._v(" "), _c('th', [_vm._v("Applications")]), _vm._v(" "), _c('th', [_vm._v("Outputs")]), _vm._v(" "), _c('th', [_vm._v("Completion Rate")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -32783,15 +32799,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     return _c('tr', [_c('td', [_vm._v(_vm._s(channel.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.percent_complete) + "%")])])
   })], 2), _vm._v(" "), _c('h2', {
     staticClass: "title is-2"
-  }, [_vm._v("eEnabled Services")]), _vm._v(" "), _c('div', {
-    staticClass: "columns"
-  }, [_vm._l((_vm.service.e_services.services), function(eservice) {
-    return _c('div', {
-      staticClass: "column has-text-centered"
-    }, [_c('strong', [_vm._v(_vm._s(eservice.name))]), _c('br'), _vm._v("\n            " + _vm._s(eservice.enabled) + "\n        ")])
-  }), _vm._v(" "), _c('div', {
-    staticClass: "column has-text-centered"
-  }, [_c('strong', [_vm._v("Estimated % of the service completed online")]), _c('br'), _vm._v("\n            " + _vm._s(_vm.service.e_services.score) + "\n        ")])], 2)]) : _vm._e()
+  }, [_vm._v("eEnabled Services")]), _vm._v(" "), _c('e-services', {
+    attrs: {
+      "services": _vm.service.e_services.services
+    }
+  })], 1) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Channel")]), _vm._v(" "), _c('th', [_vm._v("Applications")]), _vm._v(" "), _c('th', [_vm._v("Outputs")]), _vm._v(" "), _c('th', [_vm._v("Percent Complete")])])
 }]}
@@ -32855,14 +32867,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       attrs: {
         "href": '/services/' + service.id
       }
-    }, [_vm._v(_vm._s(service.name))])]), _vm._v(" "), _vm._l((service.channel_volumes.channels), function(channel) {
-      return _c('td', [_vm._v(_vm._s(channel.outputs))])
-    })], 2)
+    }, [_vm._v(_vm._s(service.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(_vm.program.channel_volumes.total_applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(_vm.program.channel_volumes.total_outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(_vm.program.channel_volumes.percent_complete) + "%")])])
   })], 2)]) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Channel")]), _vm._v(" "), _c('th', [_vm._v("Applications")]), _vm._v(" "), _c('th', [_vm._v("Outputs")]), _vm._v(" "), _c('th', [_vm._v("Percent Complete")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('tr', [_c('th', [_vm._v("Service")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
+  return _c('tr', [_c('th', [_vm._v("Service")]), _vm._v(" "), _c('th', [_vm._v("Applications")]), _vm._v(" "), _c('th', [_vm._v("Outputs")]), _vm._v(" "), _c('th', [_vm._v("Completion Rate")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -43053,6 +43063,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -43131,14 +43157,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "csv": '/api/charts/departments/service_volume'
     }
   }) : _vm._e(), _vm._v(" "), _c('table', {
-    staticClass: "table"
+    staticClass: "table is-bordered is-striped"
   }, [_vm._m(2), _vm._v(" "), _vm._l((_vm.departments), function(department) {
     return _c('tr', [_c('td', [_c('a', {
       attrs: {
         "href": '/departments/' + department.id
       }
     }, [_vm._v(_vm._s(department.name))])]), _vm._v(" "), _vm._l((department.channel_volumes.channels), function(channel) {
-      return _c('td', [_vm._v(_vm._s(channel.applications))])
+      return [_c('td', [_vm._v(_vm._s(channel.applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.outputs))])]
     })], 2)
   })], 2), _vm._v(" "), _c('h2', {
     staticClass: "subtitle is-2"
@@ -43174,7 +43200,55 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "fa fa-bar-chart"
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('tr', [_c('th', [_vm._v("Department Name")]), _vm._v(" "), _c('th', [_vm._v("Online")]), _vm._v(" "), _c('th', [_vm._v("In Person")]), _vm._v(" "), _c('th', [_vm._v("Telephone")]), _vm._v(" "), _c('th', [_vm._v("Mail")])])
+  return _c('thead', [_c('tr', [_c('th'), _vm._v(" "), _c('th', {
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_vm._v("Online")]), _vm._v(" "), _c('th', {
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_vm._v("In Person")]), _vm._v(" "), _c('th', {
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_vm._v("Telephone")]), _vm._v(" "), _c('th', {
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_vm._v("Mail")])]), _vm._v(" "), _c('tr', [_c('th', [_vm._v("Department")]), _vm._v(" "), _c('th', [_c('abbr', {
+    attrs: {
+      "title": "Applications"
+    }
+  }, [_vm._v("A")])]), _vm._v(" "), _c('th', [_c('abbr', {
+    attrs: {
+      "title": "Outputs"
+    }
+  }, [_vm._v("O")])]), _vm._v(" "), _c('th', [_c('abbr', {
+    attrs: {
+      "title": "Applications"
+    }
+  }, [_vm._v("A")])]), _vm._v(" "), _c('th', [_c('abbr', {
+    attrs: {
+      "title": "Outputs"
+    }
+  }, [_vm._v("O")])]), _vm._v(" "), _c('th', [_c('abbr', {
+    attrs: {
+      "title": "Applications"
+    }
+  }, [_vm._v("A")])]), _vm._v(" "), _c('th', [_c('abbr', {
+    attrs: {
+      "title": "Outputs"
+    }
+  }, [_vm._v("O")])]), _vm._v(" "), _c('th', [_c('abbr', {
+    attrs: {
+      "title": "Applications"
+    }
+  }, [_vm._v("A")])]), _vm._v(" "), _c('th', [_c('abbr', {
+    attrs: {
+      "title": "Outputs"
+    }
+  }, [_vm._v("O")])])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Department Name")]), _vm._v(" "), _c('th', [_vm._v("Applications")]), _vm._v(" "), _c('th', [_vm._v("Outputs")]), _vm._v(" "), _c('th', [_vm._v("Percent Complete")])])
 }]}
@@ -60382,6 +60456,286 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
      require("vue-hot-reload-api").rerender("data-v-1c60cc92", module.exports)
+  }
+}
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(80),
+  /* template */
+  __webpack_require__(81),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/samojled/Code/service-dashboard/resources/assets/js/components/graphs/eServices.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] eServices.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5b11cd3d", Component.options)
+  } else {
+    hotAPI.reload("data-v-5b11cd3d", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 80 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_d3__);
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['services'],
+    mounted: function mounted() {
+        this.render(this.services, '#e-services-chart');
+    },
+
+    methods: {
+        render: function render(dataSet, containerSelector) {
+            // Canvas size (SVG size)
+            var canvasWidth = 850,
+                canvasHeight = 225,
+
+
+            // Margins
+            margin = {
+                top: 55,
+                right: 50,
+                bottom: 20,
+                left: 50
+            };
+
+            // Node display settings
+            var nodeSpacing = 80;
+            var nodeY = 30;
+            var nodeRadius = 25;
+
+            // Colors
+            var nodeColor = "#1f77b4";
+            var nodeColor__NA = "#CCCCCC";
+
+            // Initialize svg
+            var svg = __WEBPACK_IMPORTED_MODULE_0_d3__["select"](containerSelector).append("svg").attr("width", canvasWidth).attr("height", canvasHeight).attr("class", "eServices");
+
+            // Append group that incorperates the margins
+            var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+            // Deterimin the node fill (if any)
+            var determineNodeFill = function determineNodeFill(d) {
+                switch (d) {
+                    case 1:
+                        return nodeColor;break;
+                    case 0:
+                        return "none";break;
+                    default:
+                        return "none";break;
+                }
+            };
+
+            // Determine the node outline color
+            var determineNodeOutline = function determineNodeOutline(d) {
+
+                switch (d) {
+                    case 1:
+                        return nodeColor;break;
+                    case 0:
+                        return nodeColor;break;
+                    default:
+                        return nodeColor__NA;break;
+                }
+            };
+
+            // Draw link (line) function
+            var drawLink = function drawLink(idx) {
+
+                // If the current node is the last node or if it is "not applicable", don't draw a link (draw link of length 0)
+                if (idx == dataSet.length - 1 || dataSet[idx].enabled === null) {
+                    return "M 0 0 L 0 0";
+                }
+
+                // Else, draw link
+                else {
+
+                        // Find next applicable node
+                        var nextApplicableIdx = findNextApplicableNode(idx);
+
+                        // If there is a next applicable node...
+                        if (nextApplicableIdx != -1) {
+
+                            // Init return string
+                            var returnString = "M " + nodeRadius + " 0 ";
+
+                            // Determine the x-coord of the next node relative to the current group's position
+                            var nextNodeXVal = (nextApplicableIdx - idx) * (nodeSpacing + 2 * nodeRadius) - nodeRadius;
+
+                            // If next next node in chain is "not applicable", draw around the node
+                            if (dataSet[idx + 1].enabled === null) {
+
+                                // Set control points at ~1/3, ~2/3 and draws Bezier Curve to next node
+
+                                // Control point at ~1/3
+                                returnString += "C " + (nextNodeXVal * 0.5 - nextNodeXVal * 0.1) + " " + (nodeRadius + 45) * -1 + " ";
+
+                                // Control point at ~2/3
+                                returnString += nextNodeXVal * 0.5 + nextNodeXVal * 0.17 + " " + (nodeRadius + 45) * -1 + " ";
+
+                                // Final destination of curve at next node
+                                returnString += nextNodeXVal + " 0";
+                            }
+
+                            // If the next node is "applicable", just draw link to next node.
+                            else {
+                                    returnString += "L " + nextNodeXVal + " 0";
+                                }
+
+                            // Return the "d" value
+                            return returnString;
+                        }
+
+                        // Else (the node is not applicable or at end of chain), draw link of length 0
+                        else {
+                                return "M 0 0 L 0 0";
+                            }
+                    }
+            };
+
+            // Finds the next node that is "applicable" and returns its index.
+            var findNextApplicableNode = function findNextApplicableNode(idx) {
+
+                // Default, return -1. No next applicable found.
+                var nextApplicable = -1;
+
+                // Init iterator value
+                var it = idx;
+
+                // Get current node
+                var current = dataSet[it];
+
+                // While iterator is within bounds of data set
+                while (it < dataSet.length - 1) {
+
+                    // get next node in chain
+                    var nextNode = dataSet[++it];
+
+                    // Check to see if it is applicable, if it is, break loop
+                    if (nextNode.enabled != null) {
+
+                        // Set next applicable to current value of iterator
+                        nextApplicable = it;
+
+                        // Break loop
+                        break;
+                    }
+
+                    // Else, continue
+                    else {
+                            continue;
+                        }
+                }
+
+                // Return idx of next applicable node
+                return nextApplicable;
+            };
+
+            // Determine link style
+            var drawLinkStyle = function drawLinkStyle(idx) {
+
+                // Init return String
+                var returnString = "";
+
+                // Finds next applicable node
+                var nextApplicableIdx = findNextApplicableNode(idx);
+
+                // Current node
+                var currentNode = dataSet[idx];
+
+                // If there exist next applicable node and this node is applicable
+                if (+currentNode.enabled != -1 && nextApplicable != -1) {
+
+                    // get next applicable node
+                    var nextApplicable = dataSet[nextApplicableIdx];
+
+                    // Append dash array attribute to return string
+                    returnString += "stroke-dasharray: ";
+
+                    // Set dash array attribute
+                    if (+currentNode.enabled == 1 && +nextApplicable.enabled == 1) {
+
+                        // Line style is solid
+                        returnString += " 0,0";
+                    } else {
+
+                        // Line style is dashed
+                        returnString += " 2,3";
+                    }
+                }
+
+                // Return returnString
+                return returnString;
+            };
+
+            // Iterate through data set and draw graph
+            dataSet.forEach(function (d, i) {
+
+                // Get eEnabled value
+                var type = d.enabled;
+
+                // Draw node-link group
+                var nodes = g.append("g");
+
+                // Draw node circle
+                nodes.attr("transform", "translate(" + i * (nodeSpacing + 2 * nodeRadius) + "," + nodeY + ")").attr("class", "node").append("circle").attr("r", nodeRadius).attr("cx", 0).attr("cy", 0).attr("fill", determineNodeFill(type)).attr("stroke", determineNodeOutline(type)).attr("stroke-width", 2);
+
+                // Draw label
+                nodes.append("foreignObject").attr("class", "nodeText").attr("x", -50).attr("y", nodeRadius).attr("width", 100).attr("height", 110).html("<div>" + d.name + "</div>");
+
+                // Draw link (line)
+                nodes.append("g").attr("class", "link").append("path").attr("d", drawLink(i)).attr("stroke", nodeColor).attr("style", drawLinkStyle(i)).attr("stroke-width", 2).attr("fill", "none");
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "e-services-chart"
+    }
+  })
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-5b11cd3d", module.exports)
   }
 }
 

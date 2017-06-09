@@ -97,16 +97,7 @@
 
         <h2 class="title is-2">eEnabled Services</h2>
 
-        <div class="columns">
-            <div v-for="eservice in service.e_services.services" class="column has-text-centered">
-                <strong>{{ eservice.name }}</strong><br>
-                {{ eservice.enabled }}
-            </div>
-            <div class="column has-text-centered">
-                <strong>Estimated % of the service completed online</strong><br>
-                {{ service.e_services.score }}
-            </div>
-        </div>
+        <e-services :services="service.e_services.services"></e-services>
     </div>
 </template>
 

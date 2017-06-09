@@ -37,21 +37,38 @@
             </div>
         </div>
 
-        <h2 class="title is-3">Service Volume by Program</h2>
+        <h2 class="title is-3">Service Volume by Channel</h2>
+        <table class="table">
+            <tr>
+                <th>Channel</th>
+                <th>Applications</th>
+                <th>Outputs</th>
+                <th>Percent Complete</th>
+            </tr>
+            <tr v-for="channel in department.channel_volumes.channels">
+                <td>{{ channel.name }}</td>
+                <td>{{ channel.applications }}</td>
+                <td>{{ channel.outputs }}</td>
+                <td>{{ channel.percent_complete }}%</td>
+            </tr>
+        </table>
+
+        <h2 class="title is-3">Programs</h2>
 
         <service-volume :csv="'/api/charts/departments/' + this.id + '/programs/service_volume'" v-if="show_charts"></service-volume>
 
         <table class="table">
             <tr>
                 <th>Program</th>
-                <th>Online</th>
-                <th>In Person</th>
-                <th>Telephone</th>
-                <th>Mail</th>
+                <th>Applications</th>
+                <th>Outputs</th>
+                <th>Completion Rate</th>
             </tr>
             <tr v-for="program in department.programs">
                 <td><a :href="'/programs/' + program.id">{{ program.name }}</a></td>
-                <td v-for="channel in program.channel_volumes.channels">{{ channel.outputs }}</td>
+                <td>{{ program.channel_volumes.total_applications }}</td>
+                <td>{{ program.channel_volumes.total_outputs }}</td>
+                <td>{{ program.channel_volumes.percent_complete }}%</td>
             </tr>
         </table>
     </div>

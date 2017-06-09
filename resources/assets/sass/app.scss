@@ -22,3 +22,40 @@ span.is-danger {
 .toggle-charts {
   float: right;
 }
+
+// Charts
+
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+
+.axis--y .tick line {
+  display: none;
+}
+
+.circleGraph .circlePercent {
+  text-align: center;
+}
+
+.circleGraph .circlePercent .percentText {
+  font-family: 'Arvo', serif;
+  font-size: 85px;
+  color: #555;
+  line-height: 85px;
+}
+
+.circleGraph .circlePercent .percentLable {
+  font-family: 'Arvo', serif;
+  font-size: 18px;
+  color: #777;
+}
+
+.circleGraph .circlePercent .percentLable.small {
+  font-size: 16px;
+}
+
+.eServices .nodeText {
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+}
