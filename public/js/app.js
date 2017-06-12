@@ -48995,7 +48995,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "heading"
   }, [_vm._v("Completion Rate")])])])]), _vm._v(" "), _c('h2', {
     staticClass: "title is-3"
-  }, [_vm._v("Service Volume by Channel")]), _vm._v(" "), _c('table', {
+  }, [_vm._v("Department Service Volume by Channel")]), _vm._v(" "), _c('table', {
     staticClass: "table"
   }, [_vm._m(1), _vm._v(" "), _vm._l((_vm.department.channel_volumes.channels), function(channel) {
     return _c('tr', [_c('td', [_vm._v(_vm._s(channel.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.percent_complete) + "%")])])
@@ -49421,7 +49421,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "heading"
   }, [_vm._v("Completion Rate")])])])]), _vm._v(" "), _c('h2', {
     staticClass: "title is-3"
-  }, [_vm._v("Service Volume by Channel")]), _vm._v(" "), _c('table', {
+  }, [_vm._v("Program Service Volume by Channel")]), _vm._v(" "), _c('table', {
     staticClass: "table"
   }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.program.channel_volumes.channels), function(channel) {
     return _c('tr', [_c('td', [_vm._v(_vm._s(channel.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.percent_complete) + "%")])])
