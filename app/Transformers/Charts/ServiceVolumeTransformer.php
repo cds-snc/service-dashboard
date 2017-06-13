@@ -1,9 +1,9 @@
-<?php namespace App\Transformers;
+<?php namespace App\Transformers\Charts;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 
-class DepartmentServiceVolumeTransformer
+class ServiceVolumeTransformer
 {
     /*
      * NOTE: unlike other transformers in this folder, we are not extending the themsaid/transformers

@@ -48,3 +48,8 @@ Route::get('/charts/departments/service_volume', 'Api\Charts\DepartmentControlle
 Route::get('/charts/departments/{department}/service_volume', 'Api\Charts\DepartmentController@serviceVolume');
 
 Route::get('/charts/departments/{department}/programs/service_volume', 'Api\Charts\DepartmentProgramController@serviceVolume');
+
+Route::get('/charts/programs/{program}/service_volume', 'Api\Charts\ProgramController@serviceVolume');
+Route::get('/charts/programs/{program}/services/service_volume', 'Api\Charts\ProgramServiceController@serviceVolume');
+
+Route::get('/charts/services/{service}/service_volume', 'Api\Charts\ServiceController@serviceVolume');

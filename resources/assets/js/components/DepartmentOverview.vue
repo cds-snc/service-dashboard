@@ -38,6 +38,8 @@
         </div>
 
         <h2 class="title is-3">Department Service Volume by Channel</h2>
+        <service-volume :chartId="'service-volume-program-chart'" :csv="'/api/charts/departments/' + this.id + '/service_volume'" v-show="show_charts"></service-volume>
+
         <table class="table">
             <tr>
                 <th>Channel</th>
@@ -55,7 +57,7 @@
 
         <h2 class="title is-3">Programs</h2>
 
-        <service-volume :csv="'/api/charts/departments/' + this.id + '/programs/service_volume'" v-if="show_charts"></service-volume>
+        <service-volume :chartId="'service-volume-programs-chart'" :csv="'/api/charts/departments/' + this.id + '/programs/service_volume'" v-show="show_charts"></service-volume>
 
         <table class="table">
             <tr>

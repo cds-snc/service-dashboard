@@ -1,22 +1,31 @@
 <template>
-    <div id="service-volume-chart"></div>
+    <div :id="chartId"></div>
 </template>
 
 <script>
     import * as d3 from "d3";
 
     export default {
-        props: ['csv'],
+        props: ['csv', 'chartId'],
+        data() {
+            return {
+                data: null
+            }
+        },
         mounted() {
             var app = this;
 
             d3.csv(this.csv, function(error, data) {
-                app.render(data, '#service-volume-chart');
+                app.render(data, '#' + app.chartId);
             });
+        },
+        watch: {
+            show: function() {
+
+            }
         },
         methods: {
             render(dataSet, containerSelector) {
-
                 // Canvas size (SVG size)
                 var canvasWidth     = 850,
                         canvasHeight    = 550,

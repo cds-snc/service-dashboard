@@ -18873,6 +18873,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['id'],
@@ -19069,12 +19071,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['id'],
     data: function data() {
         return {
-            program: null
+            program: null,
+            show_charts: false
         };
     },
     mounted: function mounted() {
@@ -19083,6 +19100,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         axios.get('/api/programs/' + this.id).then(function (response) {
             _this.program = response.data;
         });
+    },
+
+    methods: {
+        toggleCharts: function toggleCharts() {
+            this.show_charts = !this.show_charts;
+        }
     }
 });
 
@@ -19366,12 +19389,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['id'],
     data: function data() {
         return {
-            service: null
+            service: null,
+            show_charts: false
         };
     },
     created: function created() {
@@ -19380,6 +19415,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         axios.get('/api/services/' + this.id).then(function (response) {
             _this.service = response.data;
         });
+    },
+
+    methods: {
+        toggleCharts: function toggleCharts() {
+            this.show_charts = !this.show_charts;
+        }
     }
 });
 
@@ -19515,87 +19556,94 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-        props: ['csv'],
-        mounted: function mounted() {
-                var app = this;
+    props: ['csv', 'chartId'],
+    data: function data() {
+        return {
+            data: null
+        };
+    },
+    mounted: function mounted() {
+        var app = this;
 
-                __WEBPACK_IMPORTED_MODULE_0_d3__["csv"](this.csv, function (error, data) {
-                        app.render(data, '#service-volume-chart');
-                });
-        },
+        __WEBPACK_IMPORTED_MODULE_0_d3__["csv"](this.csv, function (error, data) {
+            app.render(data, '#' + app.chartId);
+        });
+    },
 
-        methods: {
-                render: function render(dataSet, containerSelector) {
-
-                        // Canvas size (SVG size)
-                        var canvasWidth = 850,
-                            canvasHeight = 550,
-
-
-                        // Margins
-                        margin = {
-                                top: 20,
-                                right: 20,
-                                bottom: 20,
-                                left: 300
-                        },
+    watch: {
+        show: function show() {}
+    },
+    methods: {
+        render: function render(dataSet, containerSelector) {
+            // Canvas size (SVG size)
+            var canvasWidth = 850,
+                canvasHeight = 550,
 
 
-                        // Init graph canvas
-                        svg = __WEBPACK_IMPORTED_MODULE_0_d3__["select"](containerSelector).append("svg").attr("width", canvasWidth).attr("height", canvasHeight),
-                            width = +svg.attr("width") - margin.left - margin.right,
-                            height = +svg.attr("height") - margin.top - margin.bottom,
-                            g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")"),
+            // Margins
+            margin = {
+                top: 20,
+                right: 20,
+                bottom: 20,
+                left: 300
+            },
 
 
-                        // Init Scale
-                        xScale = __WEBPACK_IMPORTED_MODULE_0_d3__["scaleLinear"](),
-                            yScale = __WEBPACK_IMPORTED_MODULE_0_d3__["scaleBand"](),
-                            channelScale = __WEBPACK_IMPORTED_MODULE_0_d3__["scaleOrdinal"](),
+            // Init graph canvas
+            svg = __WEBPACK_IMPORTED_MODULE_0_d3__["select"](containerSelector).append("svg").attr("width", canvasWidth).attr("height", canvasHeight),
+                width = +svg.attr("width") - margin.left - margin.right,
+                height = +svg.attr("height") - margin.top - margin.bottom,
+                g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")"),
 
 
-                        // Init stack layout
-                        stacked = __WEBPACK_IMPORTED_MODULE_0_d3__["stack"]().keys(dataSet.columns.slice(1));
+            // Init Scale
+            xScale = __WEBPACK_IMPORTED_MODULE_0_d3__["scaleLinear"](),
+                yScale = __WEBPACK_IMPORTED_MODULE_0_d3__["scaleBand"](),
+                channelScale = __WEBPACK_IMPORTED_MODULE_0_d3__["scaleOrdinal"](),
 
-                        // Setup Scale
-                        xScale.range([0, width]).domain([0, __WEBPACK_IMPORTED_MODULE_0_d3__["max"](dataSet, function (d) {
-                                d.online = +d.online;
-                                d.telephone = +d.telephone;
-                                d.in_person = +d.in_person;
-                                d.mail = +d.mail;
 
-                                return d.online + d.telephone + d.in_person + d.mail;
-                        })]).nice();
+            // Init stack layout
+            stacked = __WEBPACK_IMPORTED_MODULE_0_d3__["stack"]().keys(dataSet.columns.slice(1));
 
-                        // Generate y-scale
-                        yScale.rangeRound([0, height]).domain(dataSet.map(function (d) {
-                                return d.name;
-                        })).padding(0.2);
+            // Setup Scale
+            xScale.range([0, width]).domain([0, __WEBPACK_IMPORTED_MODULE_0_d3__["max"](dataSet, function (d) {
+                d.online = +d.online;
+                d.telephone = +d.telephone;
+                d.in_person = +d.in_person;
+                d.mail = +d.mail;
 
-                        // Colors
-                        channelScale.range(__WEBPACK_IMPORTED_MODULE_0_d3__["schemeCategory10"]).domain(dataSet.columns.slice(1));
+                return d.online + d.telephone + d.in_person + d.mail;
+            })]).nice();
 
-                        // Draw bars
-                        g.selectAll(".serie").data(stacked.keys(dataSet.columns.slice(1))(dataSet)) // Databinding
-                        .enter().append("g").attr("class", "serie").attr("fill", function (d) {
-                                return channelScale(d.key);
-                        }).selectAll("rect").data(function (d) {
-                                return d;
-                        }).enter().append("rect").attr("y", function (d) {
-                                return yScale(d.data.name);
-                        }).attr("height", yScale.bandwidth()).attr("x", function (d) {
-                                return xScale(d[0]);
-                        }).attr("width", function (d) {
-                                return xScale(d[1]) - xScale(d[0]);
-                        });
+            // Generate y-scale
+            yScale.rangeRound([0, height]).domain(dataSet.map(function (d) {
+                return d.name;
+            })).padding(0.2);
 
-                        g // Draw vertical axis
-                        .append("g").attr("class", "axis axis--y").call(__WEBPACK_IMPORTED_MODULE_0_d3__["axisLeft"](yScale));
+            // Colors
+            channelScale.range(__WEBPACK_IMPORTED_MODULE_0_d3__["schemeCategory10"]).domain(dataSet.columns.slice(1));
 
-                        g // Draw horrizontal axis
-                        .append("g").attr("class", "axis axis--x").attr("transform", "translate(0," + height + ")").call(__WEBPACK_IMPORTED_MODULE_0_d3__["axisBottom"](xScale).ticks(10, "s"));
-                }
+            // Draw bars
+            g.selectAll(".serie").data(stacked.keys(dataSet.columns.slice(1))(dataSet)) // Databinding
+            .enter().append("g").attr("class", "serie").attr("fill", function (d) {
+                return channelScale(d.key);
+            }).selectAll("rect").data(function (d) {
+                return d;
+            }).enter().append("rect").attr("y", function (d) {
+                return yScale(d.data.name);
+            }).attr("height", yScale.bandwidth()).attr("x", function (d) {
+                return xScale(d[0]);
+            }).attr("width", function (d) {
+                return xScale(d[1]) - xScale(d[0]);
+            });
+
+            g // Draw vertical axis
+            .append("g").attr("class", "axis axis--y").call(__WEBPACK_IMPORTED_MODULE_0_d3__["axisLeft"](yScale));
+
+            g // Draw horrizontal axis
+            .append("g").attr("class", "axis axis--x").attr("transform", "translate(0," + height + ")").call(__WEBPACK_IMPORTED_MODULE_0_d3__["axisBottom"](xScale).ticks(10, "s"));
         }
+    }
 });
 
 /***/ }),
@@ -48476,7 +48524,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/samojled/Code/service-dashboard/resources/assets/js/components/DashboardHeader.vue"
+Component.options.__file = "/Users/samojled/Code/gcdigital/service-dashboard/resources/assets/js/components/DashboardHeader.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] DashboardHeader.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48510,7 +48558,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/samojled/Code/service-dashboard/resources/assets/js/components/DepartmentOverview.vue"
+Component.options.__file = "/Users/samojled/Code/gcdigital/service-dashboard/resources/assets/js/components/DepartmentOverview.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] DepartmentOverview.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48544,7 +48592,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/samojled/Code/service-dashboard/resources/assets/js/components/Departments.vue"
+Component.options.__file = "/Users/samojled/Code/gcdigital/service-dashboard/resources/assets/js/components/Departments.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Departments.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48578,7 +48626,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/samojled/Code/service-dashboard/resources/assets/js/components/ProgramOverview.vue"
+Component.options.__file = "/Users/samojled/Code/gcdigital/service-dashboard/resources/assets/js/components/ProgramOverview.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ProgramOverview.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48612,7 +48660,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/samojled/Code/service-dashboard/resources/assets/js/components/ServiceDashboardsSearch.vue"
+Component.options.__file = "/Users/samojled/Code/gcdigital/service-dashboard/resources/assets/js/components/ServiceDashboardsSearch.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ServiceDashboardsSearch.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48650,7 +48698,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/samojled/Code/service-dashboard/resources/assets/js/components/ServiceOverview.vue"
+Component.options.__file = "/Users/samojled/Code/gcdigital/service-dashboard/resources/assets/js/components/ServiceOverview.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ServiceOverview.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48684,7 +48732,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/samojled/Code/service-dashboard/resources/assets/js/components/graphs/CompletionRate.vue"
+Component.options.__file = "/Users/samojled/Code/gcdigital/service-dashboard/resources/assets/js/components/graphs/CompletionRate.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] CompletionRate.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48718,7 +48766,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/samojled/Code/service-dashboard/resources/assets/js/components/graphs/ServiceVolume.vue"
+Component.options.__file = "/Users/samojled/Code/gcdigital/service-dashboard/resources/assets/js/components/graphs/ServiceVolume.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ServiceVolume.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48752,7 +48800,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/samojled/Code/service-dashboard/resources/assets/js/components/graphs/eServices.vue"
+Component.options.__file = "/Users/samojled/Code/gcdigital/service-dashboard/resources/assets/js/components/graphs/eServices.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] eServices.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48798,7 +48846,7 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     attrs: {
-      "id": "service-volume-chart"
+      "id": _vm.chartId
     }
   })
 },staticRenderFns: []}
@@ -48826,11 +48874,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._m(1), _vm._v(" "), _c('span', [_vm._v(_vm._s(_vm.show_charts ? 'Hide Charts' : 'Show Charts'))])])]), _vm._v(" "), _c('h2', {
     staticClass: "subtitle is-2"
-  }, [_vm._v("Service Volume by Department")]), _vm._v(" "), (_vm.show_charts) ? _c('service-volume', {
+  }, [_vm._v("Service Volume by Department")]), _vm._v(" "), _c('service-volume', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.show_charts),
+      expression: "show_charts"
+    }],
     attrs: {
+      "chartId": 'service-volume-department-chart',
       "csv": '/api/charts/departments/service_volume'
     }
-  }) : _vm._e(), _vm._v(" "), _c('table', {
+  }), _vm._v(" "), _c('table', {
     staticClass: "table is-bordered is-striped"
   }, [_vm._m(2), _vm._v(" "), _vm._l((_vm.departments), function(department) {
     return _c('tr', [_c('td', [_c('a', {
@@ -48995,17 +49050,35 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "heading"
   }, [_vm._v("Completion Rate")])])])]), _vm._v(" "), _c('h2', {
     staticClass: "title is-3"
-  }, [_vm._v("Department Service Volume by Channel")]), _vm._v(" "), _c('table', {
+  }, [_vm._v("Department Service Volume by Channel")]), _vm._v(" "), _c('service-volume', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.show_charts),
+      expression: "show_charts"
+    }],
+    attrs: {
+      "chartId": 'service-volume-program-chart',
+      "csv": '/api/charts/departments/' + this.id + '/service_volume'
+    }
+  }), _vm._v(" "), _c('table', {
     staticClass: "table"
   }, [_vm._m(1), _vm._v(" "), _vm._l((_vm.department.channel_volumes.channels), function(channel) {
     return _c('tr', [_c('td', [_vm._v(_vm._s(channel.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.percent_complete) + "%")])])
   })], 2), _vm._v(" "), _c('h2', {
     staticClass: "title is-3"
-  }, [_vm._v("Programs")]), _vm._v(" "), (_vm.show_charts) ? _c('service-volume', {
+  }, [_vm._v("Programs")]), _vm._v(" "), _c('service-volume', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.show_charts),
+      expression: "show_charts"
+    }],
     attrs: {
+      "chartId": 'service-volume-programs-chart',
       "csv": '/api/charts/departments/' + this.id + '/programs/service_volume'
     }
-  }) : _vm._e(), _vm._v(" "), _c('table', {
+  }), _vm._v(" "), _c('table', {
     staticClass: "table"
   }, [_vm._m(2), _vm._v(" "), _vm._l((_vm.department.programs), function(program) {
     return _c('tr', [_c('td', [_c('a', {
@@ -49310,7 +49383,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": '/programs/' + _vm.service.program.id
     }
-  }, [_vm._v(_vm._s(_vm.service.program.name))]), _vm._v(" >\n        " + _vm._s(_vm.service.name) + "\n    ")]), _vm._v(" "), _c('h1', {
+  }, [_vm._v(_vm._s(_vm.service.program.name))]), _vm._v(" >\n        " + _vm._s(_vm.service.name) + "\n    ")]), _vm._v(" "), _c('div', {
+    staticClass: "toggle-charts"
+  }, [_c('a', {
+    class: ['button', _vm.show_charts ? 'is-danger' : 'is-primary'],
+    on: {
+      "click": _vm.toggleCharts
+    }
+  }, [_vm._m(0), _vm._v(" "), _c('span', [_vm._v(_vm._s(_vm.show_charts ? 'Hide Charts' : 'Show Charts'))])])]), _vm._v(" "), _c('h1', {
     staticClass: "title has-text-centered"
   }, [_vm._v(_vm._s(_vm.service.name))]), _vm._v(" "), _c('div', {
     staticClass: "level"
@@ -49360,9 +49440,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "service-details"
   }, [_c('dt', [_vm._v("Service Standards")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.service_standards))]), _vm._v(" "), _c('dt', [_vm._v("Performance Targets")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.performance_targets))]), _vm._v(" "), _c('dt', [_vm._v("User Fee")]), _vm._v(" "), _c('dd', [_vm._v(_vm._s(_vm.service.user_fee))])])])]), _vm._v(" "), _c('h2', {
     staticClass: "title is-2"
-  }, [_vm._v("Service Volume by Channel")]), _vm._v(" "), _c('table', {
+  }, [_vm._v("Service Volume by Channel")]), _vm._v(" "), _c('service-volume', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.show_charts),
+      expression: "show_charts"
+    }],
+    attrs: {
+      "chartId": 'service-volume-service-chart',
+      "csv": '/api/charts/services/' + this.id + '/service_volume'
+    }
+  }), _vm._v(" "), _c('table', {
     staticClass: "table"
-  }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.service.channel_volumes.channels), function(channel) {
+  }, [_vm._m(1), _vm._v(" "), _vm._l((_vm.service.channel_volumes.channels), function(channel) {
     return _c('tr', [_c('td', [_vm._v(_vm._s(channel.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.percent_complete) + "%")])])
   })], 2), _vm._v(" "), _c('h2', {
     staticClass: "title is-2"
@@ -49372,6 +49463,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })], 1) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('span', {
+    staticClass: "icon"
+  }, [_c('i', {
+    staticClass: "fa fa-bar-chart"
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Channel")]), _vm._v(" "), _c('th', [_vm._v("Applications")]), _vm._v(" "), _c('th', [_vm._v("Outputs")]), _vm._v(" "), _c('th', [_vm._v("Percent Complete")])])
 }]}
 module.exports.render._withStripped = true
@@ -49397,7 +49494,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": '/departments/' + _vm.program.department.id
     }
-  }, [_vm._v(_vm._s(_vm.program.department.name))]), _vm._v(" >\n        " + _vm._s(_vm.program.name) + "\n    ")]), _vm._v(" "), _c('h1', {
+  }, [_vm._v(_vm._s(_vm.program.department.name))]), _vm._v(" >\n        " + _vm._s(_vm.program.name) + "\n    ")]), _vm._v(" "), _c('div', {
+    staticClass: "toggle-charts"
+  }, [_c('a', {
+    class: ['button', _vm.show_charts ? 'is-danger' : 'is-primary'],
+    on: {
+      "click": _vm.toggleCharts
+    }
+  }, [_vm._m(0), _vm._v(" "), _c('span', [_vm._v(_vm._s(_vm.show_charts ? 'Hide Charts' : 'Show Charts'))])])]), _vm._v(" "), _c('h1', {
     staticClass: "title has-text-centered"
   }, [_vm._v(_vm._s(_vm.program.name))]), _vm._v(" "), _c('div', {
     staticClass: "level"
@@ -49421,22 +49525,50 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "heading"
   }, [_vm._v("Completion Rate")])])])]), _vm._v(" "), _c('h2', {
     staticClass: "title is-3"
-  }, [_vm._v("Program Service Volume by Channel")]), _vm._v(" "), _c('table', {
+  }, [_vm._v("Program Service Volume by Channel")]), _vm._v(" "), _c('service-volume', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.show_charts),
+      expression: "show_charts"
+    }],
+    attrs: {
+      "chartId": 'service-volume-program-chart',
+      "csv": '/api/charts/programs/' + this.id + '/service_volume'
+    }
+  }), _vm._v(" "), _c('table', {
     staticClass: "table"
-  }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.program.channel_volumes.channels), function(channel) {
+  }, [_vm._m(1), _vm._v(" "), _vm._l((_vm.program.channel_volumes.channels), function(channel) {
     return _c('tr', [_c('td', [_vm._v(_vm._s(channel.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(channel.percent_complete) + "%")])])
   })], 2), _vm._v(" "), _c('h2', {
     staticClass: "title is-3"
-  }, [_vm._v("Services")]), _vm._v(" "), _c('table', {
+  }, [_vm._v("Services")]), _vm._v(" "), _c('service-volume', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.show_charts),
+      expression: "show_charts"
+    }],
+    attrs: {
+      "chartId": 'service-volume-program-services-chart',
+      "csv": '/api/charts/programs/' + this.id + '/services/service_volume'
+    }
+  }), _vm._v(" "), _c('table', {
     staticClass: "table"
-  }, [_vm._m(1), _vm._v(" "), _vm._l((_vm.program.services), function(service) {
+  }, [_vm._m(2), _vm._v(" "), _vm._l((_vm.program.services), function(service) {
     return _c('tr', [_c('td', [_c('a', {
       attrs: {
         "href": '/services/' + service.id
       }
     }, [_vm._v(_vm._s(service.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(_vm.program.channel_volumes.total_applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(_vm.program.channel_volumes.total_outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(_vm.program.channel_volumes.percent_complete) + "%")])])
-  })], 2)]) : _vm._e()
+  })], 2)], 1) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('span', {
+    staticClass: "icon"
+  }, [_c('i', {
+    staticClass: "fa fa-bar-chart"
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Channel")]), _vm._v(" "), _c('th', [_vm._v("Applications")]), _vm._v(" "), _c('th', [_vm._v("Outputs")]), _vm._v(" "), _c('th', [_vm._v("Percent Complete")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', [_vm._v("Service")]), _vm._v(" "), _c('th', [_vm._v("Applications")]), _vm._v(" "), _c('th', [_vm._v("Outputs")]), _vm._v(" "), _c('th', [_vm._v("Completion Rate")])])

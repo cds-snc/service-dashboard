@@ -7,6 +7,15 @@
             {{ service.name }}
         </div>
 
+        <div class="toggle-charts">
+            <a v-on:click="toggleCharts" :class="['button', show_charts ? 'is-danger' : 'is-primary']">
+                <span class="icon">
+                    <i class="fa fa-bar-chart"></i>
+                </span>
+                <span>{{ show_charts ? 'Hide Charts' : 'Show Charts' }}</span>
+            </a>
+        </div>
+
         <h1 class="title has-text-centered">{{ service.name }}</h1>
 
         <div class="level">
@@ -80,6 +89,8 @@
 
         <h2 class="title is-2">Service Volume by Channel</h2>
 
+        <service-volume :chartId="'service-volume-service-chart'" :csv="'/api/charts/services/' + this.id + '/service_volume'" v-show="show_charts"></service-volume>
+
         <table class="table">
             <tr>
                 <th>Channel</th>
@@ -106,13 +117,19 @@
         props: ['id'],
         data() {
             return {
-                service: null
+                service: null,
+                show_charts: false
             }
         },
         created() {
             axios.get('/api/services/' + this.id).then(response => {
                 this.service = response.data;
             });
+        },
+        methods: {
+            toggleCharts: function() {
+                this.show_charts = !this.show_charts;
+            }
         }
     }
 </script>

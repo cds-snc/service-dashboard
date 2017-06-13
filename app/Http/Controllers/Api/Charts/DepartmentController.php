@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api\Charts;
 
 use App\Department;
 use App\Transformers\DepartmentCompletionRateTransformer;
-use App\Transformers\DepartmentServiceVolumeTransformer;
+use App\Transformers\Charts\ServiceVolumeTransformer;
 use App\Http\Controllers\Controller;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -17,7 +17,7 @@ class DepartmentController extends Controller
         }
 
         // get the transformed data since we've already done the heavy lifting
-        $data = DepartmentServiceVolumeTransformer::transform($department);
+        $data = ServiceVolumeTransformer::transform($department);
 
         Excel::create('department_service_volume', function ($excel) use ($data) {
             $excel->sheet('data', function ($sheet) use ($data) {

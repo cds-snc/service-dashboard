@@ -6,6 +6,15 @@
             {{ program.name }}
         </div>
 
+        <div class="toggle-charts">
+            <a v-on:click="toggleCharts" :class="['button', show_charts ? 'is-danger' : 'is-primary']">
+                <span class="icon">
+                    <i class="fa fa-bar-chart"></i>
+                </span>
+                <span>{{ show_charts ? 'Hide Charts' : 'Show Charts' }}</span>
+            </a>
+        </div>
+
         <h1 class="title has-text-centered">{{ program.name }}</h1>
 
         <div class="level">
@@ -30,6 +39,9 @@
         </div>
 
         <h2 class="title is-3">Program Service Volume by Channel</h2>
+
+        <service-volume :chartId="'service-volume-program-chart'" :csv="'/api/charts/programs/' + this.id + '/service_volume'" v-show="show_charts"></service-volume>
+
         <table class="table">
             <tr>
                 <th>Channel</th>
@@ -46,6 +58,8 @@
         </table>
 
         <h2 class="title is-3">Services</h2>
+
+        <service-volume :chartId="'service-volume-program-services-chart'" :csv="'/api/charts/programs/' + this.id + '/services/service_volume'" v-show="show_charts"></service-volume>
 
         <table class="table">
             <tr>
@@ -69,13 +83,19 @@
         props: ['id'],
         data() {
             return {
-                program: null
+                program: null,
+                show_charts: false
             }
         },
         mounted() {
             axios.get('/api/programs/' + this.id).then(response => {
                 this.program = response.data;
             });
+        },
+        methods: {
+            toggleCharts: function() {
+                this.show_charts = !this.show_charts;
+            }
         }
     }
 </script>

@@ -16,7 +16,7 @@
 
         <h2 class="subtitle is-2">Service Volume by Department</h2>
 
-        <service-volume :csv="'/api/charts/departments/service_volume'" v-if="show_charts"></service-volume>
+        <service-volume :chartId="'service-volume-department-chart'" :csv="'/api/charts/departments/service_volume'" v-show="show_charts"></service-volume>
 
         <table class="table is-bordered is-striped">
             <thead>
