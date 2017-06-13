@@ -70,9 +70,9 @@
             </tr>
             <tr v-for="service in program.services">
                 <td><a :href="'/services/' + service.id">{{ service.name }}</a></td>
-                <td>{{ program.channel_volumes.total_applications }}</td>
-                <td>{{ program.channel_volumes.total_outputs }}</td>
-                <td>{{ program.channel_volumes.percent_complete }}%</td>
+                <td>{{ service.channel_volumes.total_applications }}</td>
+                <td>{{ service.channel_volumes.total_outputs }}</td>
+                <td><span :class="{ 'is-danger' : service.channel_volumes.percent_complete > 100 }">{{ service.channel_volumes.percent_complete }}%</span></td>
             </tr>
         </table>
     </div>

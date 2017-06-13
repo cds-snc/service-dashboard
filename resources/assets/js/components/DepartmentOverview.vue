@@ -70,7 +70,7 @@
                 <td><a :href="'/programs/' + program.id">{{ program.name }}</a></td>
                 <td>{{ program.channel_volumes.total_applications }}</td>
                 <td>{{ program.channel_volumes.total_outputs }}</td>
-                <td>{{ program.channel_volumes.percent_complete }}%</td>
+                <td><span :class="{ 'is-danger' : program.channel_volumes.percent_complete > 100 }">{{ program.channel_volumes.percent_complete }}%</span></td>
             </tr>
         </table>
     </div>

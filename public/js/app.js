@@ -49085,7 +49085,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       attrs: {
         "href": '/programs/' + program.id
       }
-    }, [_vm._v(_vm._s(program.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(program.channel_volumes.total_applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(program.channel_volumes.total_outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(program.channel_volumes.percent_complete) + "%")])])
+    }, [_vm._v(_vm._s(program.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(program.channel_volumes.total_applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(program.channel_volumes.total_outputs))]), _vm._v(" "), _c('td', [_c('span', {
+      class: {
+        'is-danger': program.channel_volumes.percent_complete > 100
+      }
+    }, [_vm._v(_vm._s(program.channel_volumes.percent_complete) + "%")])])])
   })], 2)], 1) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('span', {
@@ -49560,7 +49564,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       attrs: {
         "href": '/services/' + service.id
       }
-    }, [_vm._v(_vm._s(service.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(_vm.program.channel_volumes.total_applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(_vm.program.channel_volumes.total_outputs))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(_vm.program.channel_volumes.percent_complete) + "%")])])
+    }, [_vm._v(_vm._s(service.name))])]), _vm._v(" "), _c('td', [_vm._v(_vm._s(service.channel_volumes.total_applications))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(service.channel_volumes.total_outputs))]), _vm._v(" "), _c('td', [_c('span', {
+      class: {
+        'is-danger': service.channel_volumes.percent_complete > 100
+      }
+    }, [_vm._v(_vm._s(service.channel_volumes.percent_complete) + "%")])])])
   })], 2)], 1) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('span', {
